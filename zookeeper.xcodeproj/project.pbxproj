@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBB8721818C1CC20001F018E /* hashtable.c in Sources */ = {isa = PBXBuildFile; fileRef = BBF88C9418C14ECA00E83221 /* hashtable.c */; };
+		BBC34AFD18C17B9400401037 /* recordio.c in Sources */ = {isa = PBXBuildFile; fileRef = BBF88C9C18C14ECA00E83221 /* recordio.c */; };
+		BBF356EB18C17A5D001C1BF1 /* hashtable_itr.c in Sources */ = {isa = PBXBuildFile; fileRef = BBF88C9618C14ECA00E83221 /* hashtable_itr.c */; };
+		BBF88CB618C14FD500E83221 /* mt_adaptor.c in Sources */ = {isa = PBXBuildFile; fileRef = BBF88C9B18C14ECA00E83221 /* mt_adaptor.c */; };
+		BBF88CB718C14FD500E83221 /* zk_hashtable.c in Sources */ = {isa = PBXBuildFile; fileRef = BBF88CA118C14ECA00E83221 /* zk_hashtable.c */; };
+		BBF88CB818C14FD500E83221 /* zk_log.c in Sources */ = {isa = PBXBuildFile; fileRef = BBF88CA318C14ECA00E83221 /* zk_log.c */; };
+		BBF88CB918C14FD500E83221 /* zookeeper.c in Sources */ = {isa = PBXBuildFile; fileRef = BBF88CA418C14ECA00E83221 /* zookeeper.c */; };
+		BBF88CBA18C151B700E83221 /* zookeeper.jute.c in Sources */ = {isa = PBXBuildFile; fileRef = BBF88CAA18C14F5E00E83221 /* zookeeper.jute.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBF356E618C17A31001C1BF1 /* libhashtable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhashtable.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF88C9218C14ECA00E83221 /* cli.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cli.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/cli.c"; sourceTree = SOURCE_ROOT; };
+		BBF88C9418C14ECA00E83221 /* hashtable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = hashtable.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/hashtable/hashtable.c"; sourceTree = SOURCE_ROOT; };
+		BBF88C9518C14ECA00E83221 /* hashtable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hashtable.h; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/hashtable/hashtable.h"; sourceTree = SOURCE_ROOT; };
+		BBF88C9618C14ECA00E83221 /* hashtable_itr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = hashtable_itr.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/hashtable/hashtable_itr.c"; sourceTree = SOURCE_ROOT; };
+		BBF88C9718C14ECA00E83221 /* hashtable_itr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hashtable_itr.h; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/hashtable/hashtable_itr.h"; sourceTree = SOURCE_ROOT; };
+		BBF88C9818C14ECA00E83221 /* hashtable_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hashtable_private.h; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/hashtable/hashtable_private.h"; sourceTree = SOURCE_ROOT; };
+		BBF88C9A18C14ECA00E83221 /* load_gen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = load_gen.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/load_gen.c"; sourceTree = SOURCE_ROOT; };
+		BBF88C9B18C14ECA00E83221 /* mt_adaptor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = mt_adaptor.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/mt_adaptor.c"; sourceTree = SOURCE_ROOT; };
+		BBF88C9C18C14ECA00E83221 /* recordio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = recordio.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/recordio.c"; sourceTree = SOURCE_ROOT; };
+		BBF88C9D18C14ECA00E83221 /* st_adaptor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = st_adaptor.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/st_adaptor.c"; sourceTree = SOURCE_ROOT; };
+		BBF88CA018C14ECA00E83221 /* zk_adaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = zk_adaptor.h; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/zk_adaptor.h"; sourceTree = SOURCE_ROOT; };
+		BBF88CA118C14ECA00E83221 /* zk_hashtable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = zk_hashtable.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/zk_hashtable.c"; sourceTree = SOURCE_ROOT; };
+		BBF88CA218C14ECA00E83221 /* zk_hashtable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = zk_hashtable.h; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/zk_hashtable.h"; sourceTree = SOURCE_ROOT; };
+		BBF88CA318C14ECA00E83221 /* zk_log.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = zk_log.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/zk_log.c"; sourceTree = SOURCE_ROOT; };
+		BBF88CA418C14ECA00E83221 /* zookeeper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = zookeeper.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/src/zookeeper.c"; sourceTree = SOURCE_ROOT; };
+		BBF88CAA18C14F5E00E83221 /* zookeeper.jute.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = zookeeper.jute.c; path = "../build/3rdparty/zookeeper-3.4.5/src/c/generated/zookeeper.jute.c"; sourceTree = SOURCE_ROOT; };
+		BBF88CAB18C14F5E00E83221 /* zookeeper.jute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = zookeeper.jute.h; path = "../build/3rdparty/zookeeper-3.4.5/src/c/generated/zookeeper.jute.h"; sourceTree = SOURCE_ROOT; };
+		BBF88CB118C14F8A00E83221 /* libzookeeper_mt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libzookeeper_mt.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBF356E318C17A31001C1BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF88CAE18C14F8A00E83221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBF88C8118C14EA700E83221 = {
+			isa = PBXGroup;
+			children = (
+				BBF88CA918C14F5E00E83221 /* generated */,
+				BBF88C9118C14ECA00E83221 /* src */,
+				BBF88C8B18C14EA700E83221 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBF88C8B18C14EA700E83221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBF88CB118C14F8A00E83221 /* libzookeeper_mt.a */,
+				BBF356E618C17A31001C1BF1 /* libhashtable.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBF88C9118C14ECA00E83221 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBF88C9218C14ECA00E83221 /* cli.c */,
+				BBF88C9318C14ECA00E83221 /* hashtable */,
+				BBF88C9A18C14ECA00E83221 /* load_gen.c */,
+				BBF88C9B18C14ECA00E83221 /* mt_adaptor.c */,
+				BBF88C9C18C14ECA00E83221 /* recordio.c */,
+				BBF88C9D18C14ECA00E83221 /* st_adaptor.c */,
+				BBF88CA018C14ECA00E83221 /* zk_adaptor.h */,
+				BBF88CA118C14ECA00E83221 /* zk_hashtable.c */,
+				BBF88CA218C14ECA00E83221 /* zk_hashtable.h */,
+				BBF88CA318C14ECA00E83221 /* zk_log.c */,
+				BBF88CA418C14ECA00E83221 /* zookeeper.c */,
+			);
+			name = src;
+			path = src/c/src;
+			sourceTree = "<group>";
+		};
+		BBF88C9318C14ECA00E83221 /* hashtable */ = {
+			isa = PBXGroup;
+			children = (
+				BBF88C9418C14ECA00E83221 /* hashtable.c */,
+				BBF88C9518C14ECA00E83221 /* hashtable.h */,
+				BBF88C9618C14ECA00E83221 /* hashtable_itr.c */,
+				BBF88C9718C14ECA00E83221 /* hashtable_itr.h */,
+				BBF88C9818C14ECA00E83221 /* hashtable_private.h */,
+			);
+			path = hashtable;
+			sourceTree = "<group>";
+		};
+		BBF88CA918C14F5E00E83221 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				BBF88CAA18C14F5E00E83221 /* zookeeper.jute.c */,
+				BBF88CAB18C14F5E00E83221 /* zookeeper.jute.h */,
+			);
+			name = generated;
+			path = src/c/generated;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BBF356E418C17A31001C1BF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF88CAF18C14F8A00E83221 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BBF356E518C17A31001C1BF1 /* hashtable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF356E918C17A31001C1BF1 /* Build configuration list for PBXNativeTarget "hashtable" */;
+			buildPhases = (
+				BBF356E218C17A31001C1BF1 /* Sources */,
+				BBF356E318C17A31001C1BF1 /* Frameworks */,
+				BBF356E418C17A31001C1BF1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hashtable;
+			productName = hashtable;
+			productReference = BBF356E618C17A31001C1BF1 /* libhashtable.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BBF88CB018C14F8A00E83221 /* zookeeper_mt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF88CB218C14F8A00E83221 /* Build configuration list for PBXNativeTarget "zookeeper_mt" */;
+			buildPhases = (
+				BBF88CAD18C14F8A00E83221 /* Sources */,
+				BBF88CAE18C14F8A00E83221 /* Frameworks */,
+				BBF88CAF18C14F8A00E83221 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zookeeper_mt;
+			productName = zookeeper_mt;
+			productReference = BBF88CB118C14F8A00E83221 /* libzookeeper_mt.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBF88C8218C14EA700E83221 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Till Toenshoff";
+			};
+			buildConfigurationList = BBF88C8518C14EA700E83221 /* Build configuration list for PBXProject "zookeeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BBF88C8118C14EA700E83221;
+			productRefGroup = BBF88C8B18C14EA700E83221 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBF88CB018C14F8A00E83221 /* zookeeper_mt */,
+				BBF356E518C17A31001C1BF1 /* hashtable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBF356E218C17A31001C1BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB8721818C1CC20001F018E /* hashtable.c in Sources */,
+				BBF356EB18C17A5D001C1BF1 /* hashtable_itr.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF88CAD18C14F8A00E83221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC34AFD18C17B9400401037 /* recordio.c in Sources */,
+				BBF88CBA18C151B700E83221 /* zookeeper.jute.c in Sources */,
+				BBF88CB618C14FD500E83221 /* mt_adaptor.c in Sources */,
+				BBF88CB718C14FD500E83221 /* zk_hashtable.c in Sources */,
+				BBF88CB818C14FD500E83221 /* zk_log.c in Sources */,
+				BBF88CB918C14FD500E83221 /* zookeeper.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BBF356E718C17A31001C1BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BBF356E818C17A31001C1BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BBF88C8C18C14EA700E83221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"../build/3rdparty/zookeeper-3.4.5/src/c/include",
+					"../build/3rdparty/zookeeper-3.4.5/src/c/generated",
+					"../build/3rdparty/zookeeper-3.4.5/src/c/src",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../build/3rdparty/zookeeper-3.4.5/src/c";
+			};
+			name = Debug;
+		};
+		BBF88C8D18C14EA700E83221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"../build/3rdparty/zookeeper-3.4.5/src/c/include",
+					"../build/3rdparty/zookeeper-3.4.5/src/c/generated",
+					"../build/3rdparty/zookeeper-3.4.5/src/c/src",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../build/3rdparty/zookeeper-3.4.5/src/c";
+			};
+			name = Release;
+		};
+		BBF88CB318C14F8A00E83221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"THREADED=1",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BBF88CB418C14F8A00E83221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBF356E918C17A31001C1BF1 /* Build configuration list for PBXNativeTarget "hashtable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF356E718C17A31001C1BF1 /* Debug */,
+				BBF356E818C17A31001C1BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBF88C8518C14EA700E83221 /* Build configuration list for PBXProject "zookeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF88C8C18C14EA700E83221 /* Debug */,
+				BBF88C8D18C14EA700E83221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBF88CB218C14F8A00E83221 /* Build configuration list for PBXNativeTarget "zookeeper_mt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF88CB318C14F8A00E83221 /* Debug */,
+				BBF88CB418C14F8A00E83221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBF88C8218C14EA700E83221 /* Project object */;
+}

@@ -1,0 +1,41 @@
+# Files created by ./bootstrap.
+Makefile.in
+aclocal.m4
+autom4te.cache
+config.guess
+config.sub
+configure
+depcomp
+install-sh
+libtool.m4
+ltmain.sh
+ltoptions.m4
+ltsugar.m4
+ltversion.m4
+lt~obsolete.m4
+missing
+.DS_Store
+ar-lib
+
+# Xcode
+.DS_Store
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+
+# Recommended build directory.
+/build/
+
