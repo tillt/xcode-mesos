@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D8EFF2D9-F66E-4942-AE54-418E54F02AA1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ev</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D50E0EB1-2814-4DA1-96E3-CE76D6C79187</key>
+		<string>https://github.com/lobotomat/mesos.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>contrib/ev.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D50E0EB1-2814-4DA1-96E3-CE76D6C79187</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lobotomat/mesos.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D50E0EB1-2814-4DA1-96E3-CE76D6C79187</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D50E0EB1-2814-4DA1-96E3-CE76D6C79187</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mesos-till</string>
+		</dict>
+	</array>
+</dict>
+</plist>

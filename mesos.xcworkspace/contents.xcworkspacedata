@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:mesos.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:zookeeper.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ry-http-parser-1c3624a.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ev.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:process.xcodeproj">
+   </FileRef>
+</Workspace>
