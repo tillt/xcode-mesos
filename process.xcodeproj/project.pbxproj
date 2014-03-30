@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB1B156D18E8CDBC0015CCB3 /* http.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB1B156C18E8CDBC0015CCB3 /* http.hpp */; };
 		BBF889C618C1348200E83221 /* config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889B518C1348200E83221 /* config.hpp */; };
 		BBF889C718C1348200E83221 /* decoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889B618C1348200E83221 /* decoder.hpp */; };
 		BBF889C818C1348200E83221 /* encoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889B718C1348200E83221 /* encoder.hpp */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB1B156C18E8CDBC0015CCB3 /* http.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = http.hpp; path = ../../../3rdparty/libprocess/include/process/http.hpp; sourceTree = "<group>"; };
+		BB1B156F18E8CE350015CCB3 /* picojson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = picojson.h; path = "../build/3rdparty/libprocess/3rdparty/picojson-4f93734/picojson.h"; sourceTree = "<group>"; };
 		BBF889AE18C1341D00E83221 /* libprocess.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libprocess.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF889B518C1348200E83221 /* config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = config.hpp; path = ../3rdparty/libprocess/src/config.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889B618C1348200E83221 /* decoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = decoder.hpp; path = ../3rdparty/libprocess/src/decoder.hpp; sourceTree = SOURCE_ROOT; };
@@ -74,7 +77,6 @@
 		BBF889EB18C1349000E83221 /* gmock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = gmock.hpp; path = ../3rdparty/libprocess/include/process/gmock.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889EC18C1349000E83221 /* gtest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = gtest.hpp; path = ../3rdparty/libprocess/include/process/gtest.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889ED18C1349000E83221 /* help.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = help.hpp; path = ../3rdparty/libprocess/include/process/help.hpp; sourceTree = SOURCE_ROOT; };
-		BBF889EE18C1349000E83221 /* ../3rdparty/libprocess/include/process/http.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ../3rdparty/libprocess/include/process/http.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889EF18C1349000E83221 /* id.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = id.hpp; path = ../3rdparty/libprocess/include/process/id.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889F018C1349000E83221 /* io.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = io.hpp; path = ../3rdparty/libprocess/include/process/io.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889F118C1349000E83221 /* latch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = latch.hpp; path = ../3rdparty/libprocess/include/process/latch.hpp; sourceTree = SOURCE_ROOT; };
@@ -184,6 +186,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB1B156E18E8CE1D0015CCB3 /* picojson */ = {
+			isa = PBXGroup;
+			children = (
+				BB1B156F18E8CE350015CCB3 /* picojson.h */,
+			);
+			name = picojson;
+			sourceTree = "<group>";
+		};
 		BBB8722D18C1E63F001F018E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +213,7 @@
 		BBF889A518C1341D00E83221 = {
 			isa = PBXGroup;
 			children = (
+				BB1B156E18E8CE1D0015CCB3 /* picojson */,
 				BBF88A0A18C1362100E83221 /* stout */,
 				BBF889D718C1349000E83221 /* include */,
 				BBF889B518C1348200E83221 /* config.hpp */,
@@ -257,7 +268,7 @@
 				BBF889EB18C1349000E83221 /* gmock.hpp */,
 				BBF889EC18C1349000E83221 /* gtest.hpp */,
 				BBF889ED18C1349000E83221 /* help.hpp */,
-				BBF889EE18C1349000E83221 /* ../3rdparty/libprocess/include/process/http.hpp */,
+				BB1B156C18E8CDBC0015CCB3 /* http.hpp */,
 				BBF889EF18C1349000E83221 /* id.hpp */,
 				BBF889F018C1349000E83221 /* io.hpp */,
 				BBF889F118C1349000E83221 /* latch.hpp */,
@@ -434,6 +445,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1B156D18E8CDBC0015CCB3 /* http.hpp in Headers */,
 				BBF889C618C1348200E83221 /* config.hpp in Headers */,
 				BBF889C718C1348200E83221 /* decoder.hpp in Headers */,
 				BBF889C818C1348200E83221 /* encoder.hpp in Headers */,
@@ -571,6 +583,7 @@
 					/usr/local/include,
 					"../build/3rdparty/libprocess/3rdparty/libev-4.15",
 					"../build/3rdparty/libprocess/3rdparty/ry-http-parser-1c3624a",
+					"../build/3rdparty/libprocess/3rdparty/picojson-4f93734",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
@@ -612,6 +625,7 @@
 					/usr/local/include,
 					"../build/3rdparty/libprocess/3rdparty/libev-4.15",
 					"../build/3rdparty/libprocess/3rdparty/ry-http-parser-1c3624a",
+					"../build/3rdparty/libprocess/3rdparty/picojson-4f93734",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;

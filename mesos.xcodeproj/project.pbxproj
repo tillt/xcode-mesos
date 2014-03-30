@@ -29,6 +29,7 @@
 
 /* Begin PBXBuildFile section */
 		BB01F4B318C1834E00E64633 /* libbuild.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC34B0218C17CF500401037 /* libbuild.a */; };
+		BB1B157518E8D0390015CCB3 /* in_memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB1B157318E8D0110015CCB3 /* in_memory.cpp */; };
 		BBB8719818C1879F001F018E /* libstate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8718818C18676001F018E /* libstate.a */; };
 		BBB871B018C18896001F018E /* libmesos_no_3rdparty.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */; };
 		BBB871B118C1894E001F018E /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
@@ -538,6 +539,8 @@
 
 /* Begin PBXFileReference section */
 		BB01F4C318C183C700E64633 /* liblog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1B157318E8D0110015CCB3 /* in_memory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = in_memory.cpp; sourceTree = "<group>"; };
+		BB1B157418E8D0110015CCB3 /* in_memory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = in_memory.hpp; sourceTree = "<group>"; };
 		BBB8718818C18676001F018E /* libstate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libstate.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB871A418C18842001F018E /* mesos-master */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mesos-master"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB871B818C189CA001F018E /* mesos-slave */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mesos-slave"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1632,6 +1635,8 @@
 		BBB8734218C1E74D001F018E /* state */ = {
 			isa = PBXGroup;
 			children = (
+				BB1B157318E8D0110015CCB3 /* in_memory.cpp */,
+				BB1B157418E8D0110015CCB3 /* in_memory.hpp */,
 				BBB8734318C1E74D001F018E /* leveldb.cpp */,
 				BBB8734418C1E74D001F018E /* leveldb.hpp */,
 				BBB8734518C1E74D001F018E /* protobuf.hpp */,
@@ -2601,6 +2606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1B157518E8D0390015CCB3 /* in_memory.cpp in Sources */,
 				BBF88C7018C14AF600E83221 /* mesos.proto in Sources */,
 				BBB8750218C27C57001F018E /* registry.proto in Sources */,
 				BBB8750318C27F16001F018E /* logging.cpp in Sources */,
@@ -3142,6 +3148,7 @@
 					../build/include,
 					../build/include/mesos,
 					../build/src,
+					"../build/3rdparty/libprocess/3rdparty/picojson-4f93734",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3205,6 +3212,7 @@
 					../build/include,
 					../build/include/mesos,
 					../build/src,
+					"../build/3rdparty/libprocess/3rdparty/picojson-4f93734",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
