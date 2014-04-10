@@ -55,7 +55,7 @@ This Xcode build configuration, for reasons of simplification and speedup, uses 
 
 	Open the Mesos Workspace
 
-	`$ open xcode-mesos/mesos.workspace`
+	`$ open xcode-mesos/mesos.xcworkspace`
 
 	Now select the mesos-all target:
 
