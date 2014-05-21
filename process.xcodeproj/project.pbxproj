@@ -7,25 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB1B156D18E8CDBC0015CCB3 /* http.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB1B156C18E8CDBC0015CCB3 /* http.hpp */; };
-		BBF889C618C1348200E83221 /* config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889B518C1348200E83221 /* config.hpp */; };
-		BBF889C718C1348200E83221 /* decoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889B618C1348200E83221 /* decoder.hpp */; };
-		BBF889C818C1348200E83221 /* encoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889B718C1348200E83221 /* encoder.hpp */; };
+		BB151F061913D4F800876C12 /* check.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB151F051913D4F800876C12 /* check.hpp */; };
+		BB151F081913D54B00876C12 /* internal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB151F071913D54B00876C12 /* internal.hpp */; };
+		BB151F0A1913D59C00876C12 /* mutex.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB151F091913D59C00876C12 /* mutex.hpp */; };
+		BB151F0C1913D5C800876C12 /* sequence.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB151F0B1913D5C800876C12 /* sequence.hpp */; };
+		BB151F0E1913D9A500876C12 /* abort.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB151F0D1913D9A500876C12 /* abort.hpp */; };
+		BB151F101913D9E200876C12 /* tuple.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB151F0F1913D9E200876C12 /* tuple.hpp */; };
+		BB6ED70F1913DCA600746FD0 /* libev.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8723118C1E63F001F018E /* libev.dylib */; };
+		BB6ED7121913DCBA00746FD0 /* libry-http-parser-1c3624a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8723618C1E64F001F018E /* libry-http-parser-1c3624a.a */; };
+		BB6ED7151913DD0600746FD0 /* subprocess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB6ED7131913DD0600746FD0 /* subprocess.cpp */; };
+		BB6ED7161913DD0600746FD0 /* timeseries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB6ED7141913DD0600746FD0 /* timeseries.cpp */; };
+		BB6ED7181913DE7400746FD0 /* config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889B518C1348200E83221 /* config.hpp */; };
+		BB6ED7191913DE7A00746FD0 /* decoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889B618C1348200E83221 /* decoder.hpp */; };
+		BB6ED71A1913DE7C00746FD0 /* encoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889B718C1348200E83221 /* encoder.hpp */; };
+		BB6ED71D1913DEBF00746FD0 /* metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB6ED71C1913DEBF00746FD0 /* metrics.cpp */; };
 		BBF889CB18C1348200E83221 /* gate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889BA18C1348200E83221 /* gate.hpp */; };
 		BBF889CC18C1348200E83221 /* http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBF889BB18C1348200E83221 /* http.cpp */; };
 		BBF889CE18C1348200E83221 /* latch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBF889BD18C1348200E83221 /* latch.cpp */; };
 		BBF889D018C1348200E83221 /* pid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBF889BF18C1348200E83221 /* pid.cpp */; };
 		BBF889D118C1348200E83221 /* process.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBF889C018C1348200E83221 /* process.cpp */; };
 		BBF889D218C1348200E83221 /* reap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBF889C118C1348200E83221 /* reap.cpp */; };
-		BBF889D318C1348200E83221 /* statistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBF889C218C1348200E83221 /* statistics.cpp */; };
 		BBF889D418C1348200E83221 /* synchronized.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF889C318C1348200E83221 /* synchronized.hpp */; };
-		BBF88A6A18C1398F00E83221 /* libev.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A6918C1398F00E83221 /* libev.dylib */; };
 		BBF88A6C18C13A8100E83221 /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A6B18C13A8100E83221 /* libglog.0.dylib */; };
 		BBF88A6E18C13AC800E83221 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A6D18C13AC800E83221 /* libz.dylib */; };
-		BBF88A8418C13BE900E83221 /* libry-http-parser-1c3624a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A8318C13BE900E83221 /* libry-http-parser-1c3624a.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BB6ED70B1913DC9D00746FD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88CC018C16EBA00E83221 /* ev.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF88A5318C1388100E83221;
+			remoteInfo = ev;
+		};
+		BB6ED7101913DCB100746FD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88CBF18C16E7E00E83221 /* ry-http-parser-1c3624a.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF88A7718C13BC000E83221;
+			remoteInfo = "ry-http-parser-1c3624a";
+		};
 		BBB8723018C1E63F001F018E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BBF88CC018C16EBA00E83221 /* ev.xcodeproj */;
@@ -43,8 +64,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB1B156C18E8CDBC0015CCB3 /* http.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = http.hpp; path = ../../../3rdparty/libprocess/include/process/http.hpp; sourceTree = "<group>"; };
-		BB1B156F18E8CE350015CCB3 /* picojson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = picojson.h; path = "../build/3rdparty/libprocess/3rdparty/picojson-4f93734/picojson.h"; sourceTree = "<group>"; };
+		BB151EFB1913D45D00876C12 /* counter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = counter.hpp; path = ../3rdparty/libprocess/include/process/metrics/counter.hpp; sourceTree = SOURCE_ROOT; };
+		BB151EFC1913D45D00876C12 /* gauge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = gauge.hpp; path = ../3rdparty/libprocess/include/process/metrics/gauge.hpp; sourceTree = SOURCE_ROOT; };
+		BB151EFD1913D45D00876C12 /* metric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = metric.hpp; path = ../3rdparty/libprocess/include/process/metrics/metric.hpp; sourceTree = SOURCE_ROOT; };
+		BB151EFE1913D45D00876C12 /* metrics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = metrics.hpp; path = ../3rdparty/libprocess/include/process/metrics/metrics.hpp; sourceTree = SOURCE_ROOT; };
+		BB151EFF1913D45D00876C12 /* timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = timer.hpp; path = ../3rdparty/libprocess/include/process/metrics/timer.hpp; sourceTree = SOURCE_ROOT; };
+		BB151F051913D4F800876C12 /* check.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = check.hpp; path = ../3rdparty/libprocess/include/process/check.hpp; sourceTree = SOURCE_ROOT; };
+		BB151F071913D54B00876C12 /* internal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = internal.hpp; path = ../3rdparty/libprocess/include/process/internal.hpp; sourceTree = SOURCE_ROOT; };
+		BB151F091913D59C00876C12 /* mutex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mutex.hpp; path = ../3rdparty/libprocess/include/process/mutex.hpp; sourceTree = SOURCE_ROOT; };
+		BB151F0B1913D5C800876C12 /* sequence.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = sequence.hpp; path = ../3rdparty/libprocess/include/process/sequence.hpp; sourceTree = SOURCE_ROOT; };
+		BB151F0D1913D9A500876C12 /* abort.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = abort.hpp; path = ../3rdparty/libprocess/3rdparty/stout/include/stout/abort.hpp; sourceTree = SOURCE_ROOT; };
+		BB151F0F1913D9E200876C12 /* tuple.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = tuple.hpp; path = ../3rdparty/libprocess/3rdparty/stout/include/stout/tuple.hpp; sourceTree = SOURCE_ROOT; };
+		BB6ED7131913DD0600746FD0 /* subprocess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = subprocess.cpp; path = ../3rdparty/libprocess/src/subprocess.cpp; sourceTree = SOURCE_ROOT; };
+		BB6ED7141913DD0600746FD0 /* timeseries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = timeseries.cpp; path = ../3rdparty/libprocess/src/timeseries.cpp; sourceTree = SOURCE_ROOT; };
+		BB6ED71C1913DEBF00746FD0 /* metrics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = metrics.cpp; path = ../3rdparty/libprocess/src/metrics/metrics.cpp; sourceTree = SOURCE_ROOT; };
 		BBF889AE18C1341D00E83221 /* libprocess.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libprocess.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF889B518C1348200E83221 /* config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = config.hpp; path = ../3rdparty/libprocess/src/config.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889B618C1348200E83221 /* decoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = decoder.hpp; path = ../3rdparty/libprocess/src/decoder.hpp; sourceTree = SOURCE_ROOT; };
@@ -55,7 +88,6 @@
 		BBF889BF18C1348200E83221 /* pid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pid.cpp; path = ../3rdparty/libprocess/src/pid.cpp; sourceTree = SOURCE_ROOT; };
 		BBF889C018C1348200E83221 /* process.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = process.cpp; path = ../3rdparty/libprocess/src/process.cpp; sourceTree = SOURCE_ROOT; };
 		BBF889C118C1348200E83221 /* reap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = reap.cpp; path = ../3rdparty/libprocess/src/reap.cpp; sourceTree = SOURCE_ROOT; };
-		BBF889C218C1348200E83221 /* statistics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = statistics.cpp; path = ../3rdparty/libprocess/src/statistics.cpp; sourceTree = SOURCE_ROOT; };
 		BBF889C318C1348200E83221 /* synchronized.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = synchronized.hpp; path = ../3rdparty/libprocess/src/synchronized.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889D918C1349000E83221 /* async.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = async.hpp; path = ../3rdparty/libprocess/include/process/async.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889DB18C1349000E83221 /* defer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = defer.hpp; path = ../3rdparty/libprocess/include/process/defer.hpp; sourceTree = SOURCE_ROOT; };
@@ -72,11 +104,12 @@
 		BBF889E618C1349000E83221 /* event.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = event.hpp; path = ../3rdparty/libprocess/include/process/event.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889E718C1349000E83221 /* executor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = executor.hpp; path = ../3rdparty/libprocess/include/process/executor.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889E818C1349000E83221 /* filter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = filter.hpp; path = ../3rdparty/libprocess/include/process/filter.hpp; sourceTree = SOURCE_ROOT; };
-		BBF889E918C1349000E83221 /* future.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = future.hpp; path = ../3rdparty/libprocess/include/process/future.hpp; sourceTree = SOURCE_ROOT; };
+		BBF889E918C1349000E83221 /* future.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = future.hpp; path = "/Users/till/Development/mesos-till/contrib/../3rdparty/libprocess/include/process/future.hpp"; sourceTree = "<absolute>"; };
 		BBF889EA18C1349000E83221 /* gc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = gc.hpp; path = ../3rdparty/libprocess/include/process/gc.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889EB18C1349000E83221 /* gmock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = gmock.hpp; path = ../3rdparty/libprocess/include/process/gmock.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889EC18C1349000E83221 /* gtest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = gtest.hpp; path = ../3rdparty/libprocess/include/process/gtest.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889ED18C1349000E83221 /* help.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = help.hpp; path = ../3rdparty/libprocess/include/process/help.hpp; sourceTree = SOURCE_ROOT; };
+		BBF889EE18C1349000E83221 /* http.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = http.hpp; path = ../3rdparty/libprocess/include/process/http.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889EF18C1349000E83221 /* id.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = id.hpp; path = ../3rdparty/libprocess/include/process/id.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889F018C1349000E83221 /* io.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = io.hpp; path = ../3rdparty/libprocess/include/process/io.hpp; sourceTree = SOURCE_ROOT; };
 		BBF889F118C1349000E83221 /* latch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = latch.hpp; path = ../3rdparty/libprocess/include/process/latch.hpp; sourceTree = SOURCE_ROOT; };
@@ -176,22 +209,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF88A8418C13BE900E83221 /* libry-http-parser-1c3624a.a in Frameworks */,
 				BBF88A6E18C13AC800E83221 /* libz.dylib in Frameworks */,
 				BBF88A6C18C13A8100E83221 /* libglog.0.dylib in Frameworks */,
-				BBF88A6A18C1398F00E83221 /* libev.dylib in Frameworks */,
+				BB6ED7121913DCBA00746FD0 /* libry-http-parser-1c3624a.a in Frameworks */,
+				BB6ED70F1913DCA600746FD0 /* libev.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BB1B156E18E8CE1D0015CCB3 /* picojson */ = {
+		BB151EFA1913D44A00876C12 /* metrics */ = {
 			isa = PBXGroup;
 			children = (
-				BB1B156F18E8CE350015CCB3 /* picojson.h */,
+				BB151EFB1913D45D00876C12 /* counter.hpp */,
+				BB151EFC1913D45D00876C12 /* gauge.hpp */,
+				BB151EFD1913D45D00876C12 /* metric.hpp */,
+				BB151EFE1913D45D00876C12 /* metrics.hpp */,
+				BB151EFF1913D45D00876C12 /* timer.hpp */,
 			);
-			name = picojson;
+			name = metrics;
+			sourceTree = "<group>";
+		};
+		BB6ED71B1913DEB400746FD0 /* metrics */ = {
+			isa = PBXGroup;
+			children = (
+				BB6ED71C1913DEBF00746FD0 /* metrics.cpp */,
+			);
+			name = metrics;
 			sourceTree = "<group>";
 		};
 		BBB8722D18C1E63F001F018E /* Products */ = {
@@ -213,7 +258,7 @@
 		BBF889A518C1341D00E83221 = {
 			isa = PBXGroup;
 			children = (
-				BB1B156E18E8CE1D0015CCB3 /* picojson */,
+				BB6ED71B1913DEB400746FD0 /* metrics */,
 				BBF88A0A18C1362100E83221 /* stout */,
 				BBF889D718C1349000E83221 /* include */,
 				BBF889B518C1348200E83221 /* config.hpp */,
@@ -225,8 +270,9 @@
 				BBF889BF18C1348200E83221 /* pid.cpp */,
 				BBF889C018C1348200E83221 /* process.cpp */,
 				BBF889C118C1348200E83221 /* reap.cpp */,
-				BBF889C218C1348200E83221 /* statistics.cpp */,
+				BB6ED7131913DD0600746FD0 /* subprocess.cpp */,
 				BBF889C318C1348200E83221 /* synchronized.hpp */,
+				BB6ED7141913DD0600746FD0 /* timeseries.cpp */,
 				BBF88CD018C16F2300E83221 /* libs */,
 				BBF88CCF18C16F1000E83221 /* subprojects */,
 				BBF889AF18C1341D00E83221 /* Products */,
@@ -252,8 +298,10 @@
 		BBF889D818C1349000E83221 /* process */ = {
 			isa = PBXGroup;
 			children = (
+				BB151EFA1913D44A00876C12 /* metrics */,
 				BBF889D918C1349000E83221 /* async.hpp */,
 				BBF889DA18C1349000E83221 /* c++11 */,
+				BB151F051913D4F800876C12 /* check.hpp */,
 				BBF889E018C1349000E83221 /* clock.hpp */,
 				BBF889E118C1349000E83221 /* collect.hpp */,
 				BBF889E218C1349000E83221 /* defer.hpp */,
@@ -268,14 +316,16 @@
 				BBF889EB18C1349000E83221 /* gmock.hpp */,
 				BBF889EC18C1349000E83221 /* gtest.hpp */,
 				BBF889ED18C1349000E83221 /* help.hpp */,
-				BB1B156C18E8CDBC0015CCB3 /* http.hpp */,
+				BBF889EE18C1349000E83221 /* http.hpp */,
 				BBF889EF18C1349000E83221 /* id.hpp */,
+				BB151F071913D54B00876C12 /* internal.hpp */,
 				BBF889F018C1349000E83221 /* io.hpp */,
 				BBF889F118C1349000E83221 /* latch.hpp */,
 				BBF889F218C1349000E83221 /* limiter.hpp */,
 				BBF889F318C1349000E83221 /* logging.hpp */,
 				BBF889F418C1349000E83221 /* message.hpp */,
 				BBF889F518C1349000E83221 /* mime.hpp */,
+				BB151F091913D59C00876C12 /* mutex.hpp */,
 				BBF889F618C1349000E83221 /* once.hpp */,
 				BBF889F718C1349000E83221 /* owned.hpp */,
 				BBF889F818C1349000E83221 /* pid.hpp */,
@@ -284,6 +334,7 @@
 				BBF889FB18C1349000E83221 /* protobuf.hpp */,
 				BBF889FC18C1349000E83221 /* reap.hpp */,
 				BBF889FD18C1349000E83221 /* run.hpp */,
+				BB151F0B1913D5C800876C12 /* sequence.hpp */,
 				BBF889FE18C1349000E83221 /* shared.hpp */,
 				BBF889FF18C1349000E83221 /* socket.hpp */,
 				BBF88A0018C1349000E83221 /* statistics.hpp */,
@@ -296,7 +347,7 @@
 				BBF88A0718C1349000E83221 /* tuples */,
 			);
 			path = process;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		BBF889DA18C1349000E83221 /* c++11 */ = {
 			isa = PBXGroup;
@@ -340,6 +391,7 @@
 			children = (
 				BBF88A1418C1362100E83221 /* flags */,
 				BBF88A2E18C1362100E83221 /* os */,
+				BB151F0D1913D9A500876C12 /* abort.hpp */,
 				BBF88A0D18C1362100E83221 /* bytes.hpp */,
 				BBF88A0E18C1362100E83221 /* cache.hpp */,
 				BBF88A0F18C1362100E83221 /* check.hpp */,
@@ -380,6 +432,7 @@
 				BBF88A4518C1362100E83221 /* strings.hpp */,
 				BBF88A4618C1362100E83221 /* thread.hpp */,
 				BBF88A4718C1362100E83221 /* try.hpp */,
+				BB151F0F1913D9E200876C12 /* tuple.hpp */,
 				BBF88A4818C1362100E83221 /* unreachable.hpp */,
 				BBF88A4918C1362100E83221 /* utils.hpp */,
 				BBF88A4A18C1362100E83221 /* uuid.hpp */,
@@ -445,11 +498,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1B156D18E8CDBC0015CCB3 /* http.hpp in Headers */,
-				BBF889C618C1348200E83221 /* config.hpp in Headers */,
-				BBF889C718C1348200E83221 /* decoder.hpp in Headers */,
-				BBF889C818C1348200E83221 /* encoder.hpp in Headers */,
+				BB151F0A1913D59C00876C12 /* mutex.hpp in Headers */,
+				BB6ED71A1913DE7C00746FD0 /* encoder.hpp in Headers */,
+				BB151F0C1913D5C800876C12 /* sequence.hpp in Headers */,
+				BB6ED7181913DE7400746FD0 /* config.hpp in Headers */,
+				BB6ED7191913DE7A00746FD0 /* decoder.hpp in Headers */,
+				BB151F0E1913D9A500876C12 /* abort.hpp in Headers */,
+				BB151F101913D9E200876C12 /* tuple.hpp in Headers */,
+				BB151F081913D54B00876C12 /* internal.hpp in Headers */,
 				BBF889CB18C1348200E83221 /* gate.hpp in Headers */,
+				BB151F061913D4F800876C12 /* check.hpp in Headers */,
 				BBF889D418C1348200E83221 /* synchronized.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +526,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				BB6ED7111913DCB100746FD0 /* PBXTargetDependency */,
+				BB6ED70C1913DC9D00746FD0 /* PBXTargetDependency */,
 			);
 			name = process;
 			productName = process;
@@ -532,10 +592,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF889D218C1348200E83221 /* reap.cpp in Sources */,
-				BBF889D318C1348200E83221 /* statistics.cpp in Sources */,
 				BBF889D018C1348200E83221 /* pid.cpp in Sources */,
 				BBF889CE18C1348200E83221 /* latch.cpp in Sources */,
+				BBF889D218C1348200E83221 /* reap.cpp in Sources */,
+				BB6ED71D1913DEBF00746FD0 /* metrics.cpp in Sources */,
+				BB6ED7151913DD0600746FD0 /* subprocess.cpp in Sources */,
+				BB6ED7161913DD0600746FD0 /* timeseries.cpp in Sources */,
 				BBF889CC18C1348200E83221 /* http.cpp in Sources */,
 				BBF889D118C1348200E83221 /* process.cpp in Sources */,
 			);
@@ -543,11 +605,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BB6ED70C1913DC9D00746FD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ev;
+			targetProxy = BB6ED70B1913DC9D00746FD0 /* PBXContainerItemProxy */;
+		};
+		BB6ED7111913DCB100746FD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ry-http-parser-1c3624a";
+			targetProxy = BB6ED7101913DCB100746FD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		BBF889B018C1341D00E83221 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -594,7 +668,6 @@
 		BBF889B118C1341D00E83221 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -636,11 +709,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/process-hgyrogrpotzajabempydclpntjlj/Build/Products/Debug",
-					/usr/local/Cellar/glog/0.3.3/lib,
-				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -649,11 +719,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/process-hgyrogrpotzajabempydclpntjlj/Build/Products/Debug",
-					/usr/local/Cellar/glog/0.3.3/lib,
-				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

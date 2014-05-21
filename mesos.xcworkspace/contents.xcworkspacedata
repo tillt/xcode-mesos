@@ -16,4 +16,10 @@
    <FileRef
       location = "container:process.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:gmock.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:gtest.xcodeproj">
+   </FileRef>
 </Workspace>

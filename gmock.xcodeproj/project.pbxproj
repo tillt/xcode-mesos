@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBB8A1B818F8D6E30088BE20 /* gmock-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = BBB8A1B118F8D6E30088BE20 /* gmock-all.cc */; };
+		BBB8A1B918F8D6E30088BE20 /* gmock-cardinalities.cc in Sources */ = {isa = PBXBuildFile; fileRef = BBB8A1B218F8D6E30088BE20 /* gmock-cardinalities.cc */; };
+		BBB8A1BA18F8D6E30088BE20 /* gmock-internal-utils.cc in Sources */ = {isa = PBXBuildFile; fileRef = BBB8A1B318F8D6E30088BE20 /* gmock-internal-utils.cc */; };
+		BBB8A1BB18F8D6E30088BE20 /* gmock-matchers.cc in Sources */ = {isa = PBXBuildFile; fileRef = BBB8A1B418F8D6E30088BE20 /* gmock-matchers.cc */; };
+		BBB8A1BC18F8D6E30088BE20 /* gmock-spec-builders.cc in Sources */ = {isa = PBXBuildFile; fileRef = BBB8A1B518F8D6E30088BE20 /* gmock-spec-builders.cc */; };
+		BBB8A1BD18F8D6E30088BE20 /* gmock.cc in Sources */ = {isa = PBXBuildFile; fileRef = BBB8A1B618F8D6E30088BE20 /* gmock.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBB8A18C18F8D66E0088BE20 /* libgmock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgmock.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB8A1B118F8D6E30088BE20 /* gmock-all.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "gmock-all.cc"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/src/gmock-all.cc"; sourceTree = "<group>"; };
+		BBB8A1B218F8D6E30088BE20 /* gmock-cardinalities.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "gmock-cardinalities.cc"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/src/gmock-cardinalities.cc"; sourceTree = "<group>"; };
+		BBB8A1B318F8D6E30088BE20 /* gmock-internal-utils.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "gmock-internal-utils.cc"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/src/gmock-internal-utils.cc"; sourceTree = "<group>"; };
+		BBB8A1B418F8D6E30088BE20 /* gmock-matchers.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "gmock-matchers.cc"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/src/gmock-matchers.cc"; sourceTree = "<group>"; };
+		BBB8A1B518F8D6E30088BE20 /* gmock-spec-builders.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "gmock-spec-builders.cc"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/src/gmock-spec-builders.cc"; sourceTree = "<group>"; };
+		BBB8A1B618F8D6E30088BE20 /* gmock.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gmock.cc; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/src/gmock.cc"; sourceTree = "<group>"; };
+		BBB8A1C018F8D79F0088BE20 /* gmock-actions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "gmock-actions.h"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/gmock-actions.h"; sourceTree = "<group>"; };
+		BBB8A1C118F8D79F0088BE20 /* gmock-cardinalities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "gmock-cardinalities.h"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/gmock-cardinalities.h"; sourceTree = "<group>"; };
+		BBB8A1C218F8D79F0088BE20 /* gmock-generated-actions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "gmock-generated-actions.h"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/gmock-generated-actions.h"; sourceTree = "<group>"; };
+		BBB8A1C318F8D79F0088BE20 /* gmock-generated-function-mockers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "gmock-generated-function-mockers.h"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/gmock-generated-function-mockers.h"; sourceTree = "<group>"; };
+		BBB8A1C418F8D79F0088BE20 /* gmock-generated-matchers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "gmock-generated-matchers.h"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/gmock-generated-matchers.h"; sourceTree = "<group>"; };
+		BBB8A1C518F8D79F0088BE20 /* gmock-generated-nice-strict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "gmock-generated-nice-strict.h"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/gmock-generated-nice-strict.h"; sourceTree = "<group>"; };
+		BBB8A1C618F8D79F0088BE20 /* gmock-matchers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "gmock-matchers.h"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/gmock-matchers.h"; sourceTree = "<group>"; };
+		BBB8A1C718F8D79F0088BE20 /* gmock-more-actions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "gmock-more-actions.h"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/gmock-more-actions.h"; sourceTree = "<group>"; };
+		BBB8A1C818F8D79F0088BE20 /* gmock-spec-builders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "gmock-spec-builders.h"; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/gmock-spec-builders.h"; sourceTree = "<group>"; };
+		BBB8A1C918F8D79F0088BE20 /* gmock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gmock.h; path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/gmock.h"; sourceTree = "<group>"; };
+		BBB8A1CB18F8D7AF0088BE20 /* gmock-generated-internal-utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gmock-generated-internal-utils.h"; sourceTree = "<group>"; };
+		BBB8A1CD18F8D7AF0088BE20 /* gmock-internal-utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gmock-internal-utils.h"; sourceTree = "<group>"; };
+		BBB8A1CE18F8D7AF0088BE20 /* gmock-port.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gmock-port.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBB8A18918F8D66E0088BE20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBB8A18318F8D66E0088BE20 = {
+			isa = PBXGroup;
+			children = (
+				BBB8A1BF18F8D7880088BE20 /* include */,
+				BBB8A1BE18F8D7780088BE20 /* src */,
+				BBB8A18D18F8D66E0088BE20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBB8A18D18F8D66E0088BE20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBB8A18C18F8D66E0088BE20 /* libgmock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBB8A1BE18F8D7780088BE20 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBB8A1B118F8D6E30088BE20 /* gmock-all.cc */,
+				BBB8A1B218F8D6E30088BE20 /* gmock-cardinalities.cc */,
+				BBB8A1B318F8D6E30088BE20 /* gmock-internal-utils.cc */,
+				BBB8A1B418F8D6E30088BE20 /* gmock-matchers.cc */,
+				BBB8A1B518F8D6E30088BE20 /* gmock-spec-builders.cc */,
+				BBB8A1B618F8D6E30088BE20 /* gmock.cc */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		BBB8A1BF18F8D7880088BE20 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BBB8A1CA18F8D7AF0088BE20 /* internal */,
+				BBB8A1C018F8D79F0088BE20 /* gmock-actions.h */,
+				BBB8A1C118F8D79F0088BE20 /* gmock-cardinalities.h */,
+				BBB8A1C218F8D79F0088BE20 /* gmock-generated-actions.h */,
+				BBB8A1C318F8D79F0088BE20 /* gmock-generated-function-mockers.h */,
+				BBB8A1C418F8D79F0088BE20 /* gmock-generated-matchers.h */,
+				BBB8A1C518F8D79F0088BE20 /* gmock-generated-nice-strict.h */,
+				BBB8A1C618F8D79F0088BE20 /* gmock-matchers.h */,
+				BBB8A1C718F8D79F0088BE20 /* gmock-more-actions.h */,
+				BBB8A1C818F8D79F0088BE20 /* gmock-spec-builders.h */,
+				BBB8A1C918F8D79F0088BE20 /* gmock.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		BBB8A1CA18F8D7AF0088BE20 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				BBB8A1CB18F8D7AF0088BE20 /* gmock-generated-internal-utils.h */,
+				BBB8A1CD18F8D7AF0088BE20 /* gmock-internal-utils.h */,
+				BBB8A1CE18F8D7AF0088BE20 /* gmock-port.h */,
+			);
+			name = internal;
+			path = "../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include/gmock/internal";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BBB8A18A18F8D66E0088BE20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BBB8A18B18F8D66E0088BE20 /* gmock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBB8A19018F8D66E0088BE20 /* Build configuration list for PBXNativeTarget "gmock" */;
+			buildPhases = (
+				BBB8A18818F8D66E0088BE20 /* Sources */,
+				BBB8A18918F8D66E0088BE20 /* Frameworks */,
+				BBB8A18A18F8D66E0088BE20 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gmock;
+			productName = gmock;
+			productReference = BBB8A18C18F8D66E0088BE20 /* libgmock.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBB8A18418F8D66E0088BE20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Till Toenshoff";
+			};
+			buildConfigurationList = BBB8A18718F8D66E0088BE20 /* Build configuration list for PBXProject "gmock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BBB8A18318F8D66E0088BE20;
+			productRefGroup = BBB8A18D18F8D66E0088BE20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBB8A18B18F8D66E0088BE20 /* gmock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBB8A18818F8D66E0088BE20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB8A1BA18F8D6E30088BE20 /* gmock-internal-utils.cc in Sources */,
+				BBB8A1BB18F8D6E30088BE20 /* gmock-matchers.cc in Sources */,
+				BBB8A1BC18F8D6E30088BE20 /* gmock-spec-builders.cc in Sources */,
+				BBB8A1B918F8D6E30088BE20 /* gmock-cardinalities.cc in Sources */,
+				BBB8A1BD18F8D6E30088BE20 /* gmock.cc in Sources */,
+				BBB8A1B818F8D6E30088BE20 /* gmock-all.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BBB8A18E18F8D66E0088BE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"GTEST_USE_OWN_TR1_TUPLE=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../build/3rdparty/libprocess/3rdparty/gmock-1.6.0",
+					"../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include",
+					"../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/gtest/include",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BBB8A18F18F8D66E0088BE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../build/3rdparty/libprocess/3rdparty/gmock-1.6.0",
+					"../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include",
+					"../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/gtest/include",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BBB8A19118F8D66E0088BE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BBB8A19218F8D66E0088BE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBB8A18718F8D66E0088BE20 /* Build configuration list for PBXProject "gmock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBB8A18E18F8D66E0088BE20 /* Debug */,
+				BBB8A18F18F8D66E0088BE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBB8A19018F8D66E0088BE20 /* Build configuration list for PBXNativeTarget "gmock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBB8A19118F8D66E0088BE20 /* Debug */,
+				BBB8A19218F8D66E0088BE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBB8A18418F8D66E0088BE20 /* Project object */;
+}
