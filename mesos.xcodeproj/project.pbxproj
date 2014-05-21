@@ -18,6 +18,7 @@
 				BBB8756118C283FC001F018E /* PBXTargetDependency */,
 				BBB8756318C283FC001F018E /* PBXTargetDependency */,
 				BBB8751118C28062001F018E /* PBXTargetDependency */,
+				BB8DD64E192D21B500D7B2EB /* PBXTargetDependency */,
 				BBB8750D18C28062001F018E /* PBXTargetDependency */,
 				BBB8758218C28517001F018E /* PBXTargetDependency */,
 				BBB8750F18C28062001F018E /* PBXTargetDependency */,
@@ -34,17 +35,83 @@
 		BB8DD639192D1E5C00D7B2EB /* containerizer.proto in Sources */ = {isa = PBXBuildFile; fileRef = BB151EF71913D34100876C12 /* containerizer.proto */; };
 		BB8DD647192D1FB100D7B2EB /* in_memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB8DD643192D1FA200D7B2EB /* in_memory.cpp */; };
 		BB8DD648192D1FB400D7B2EB /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB8DD645192D1FA200D7B2EB /* log.cpp */; };
+		BB8DD671192D237400D7B2EB /* allocator_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8734B18C1E74D001F018E /* allocator_tests.cpp */; };
+		BB8DD673192D237A00D7B2EB /* attributes_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8734D18C1E74E001F018E /* attributes_tests.cpp */; };
+		BB8DD674192D237C00D7B2EB /* authentication_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8734E18C1E74E001F018E /* authentication_tests.cpp */; };
+		BB8DD677192D238D00D7B2EB /* containerizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8735318C1E74E001F018E /* containerizer.cpp */; };
+		BB8DD678192D239300D7B2EB /* environment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8735518C1E74E001F018E /* environment.cpp */; };
+		BB8DD679192D239B00D7B2EB /* examples_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8735718C1E74E001F018E /* examples_tests.cpp */; };
+		BB8DD67A192D239E00D7B2EB /* exception_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8735818C1E74E001F018E /* exception_tests.cpp */; };
+		BB8DD67B192D23A000D7B2EB /* fault_tolerance_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8735918C1E74E001F018E /* fault_tolerance_tests.cpp */; };
+		BB8DD67C192D23A300D7B2EB /* files_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8735A18C1E74E001F018E /* files_tests.cpp */; };
+		BB8DD67D192D23A600D7B2EB /* flags.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8735B18C1E74E001F018E /* flags.cpp */; };
+		BB8DD67F192D23B000D7B2EB /* gc_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8735E18C1E74E001F018E /* gc_tests.cpp */; };
+		BB8DD682192D23B800D7B2EB /* log_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8736418C1E74E001F018E /* log_tests.cpp */; };
+		BB8DD683192D23BA00D7B2EB /* logging_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8736518C1E74E001F018E /* logging_tests.cpp */; };
+		BB8DD684192D23BC00D7B2EB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8736618C1E74E001F018E /* main.cpp */; };
+		BB8DD685192D23BF00D7B2EB /* master_contender_detector_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8736718C1E74E001F018E /* master_contender_detector_tests.cpp */; };
+		BB8DD686192D23C200D7B2EB /* master_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8736818C1E74E001F018E /* master_tests.cpp */; };
+		BB8DD687192D23C400D7B2EB /* mesos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8736918C1E74E001F018E /* mesos.cpp */; };
+		BB8DD688192D23C900D7B2EB /* monitor_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8736B18C1E74E001F018E /* monitor_tests.cpp */; };
+		BB8DD689192D23CD00D7B2EB /* paths_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8736D18C1E74E001F018E /* paths_tests.cpp */; };
+		BB8DD68B192D23D200D7B2EB /* protobuf_io_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8736F18C1E74E001F018E /* protobuf_io_tests.cpp */; };
+		BB8DD68C192D23D400D7B2EB /* registrar_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737118C1E74E001F018E /* registrar_tests.cpp */; };
+		BB8DD68D192D23D700D7B2EB /* repair_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737218C1E74E001F018E /* repair_tests.cpp */; };
+		BB8DD68E192D23D900D7B2EB /* resource_offers_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737318C1E74E001F018E /* resource_offers_tests.cpp */; };
+		BB8DD68F192D23DC00D7B2EB /* resources_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737418C1E74E001F018E /* resources_tests.cpp */; };
+		BB8DD691192D23E100D7B2EB /* script.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737618C1E74E001F018E /* script.cpp */; };
+		BB8DD692192D23E500D7B2EB /* slave_recovery_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737818C1E74E001F018E /* slave_recovery_tests.cpp */; };
+		BB8DD693192D23ED00D7B2EB /* sorter_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737918C1E74E001F018E /* sorter_tests.cpp */; };
+		BB8DD694192D23EF00D7B2EB /* state_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737A18C1E74E001F018E /* state_tests.cpp */; };
+		BB8DD695192D23F200D7B2EB /* status_update_manager_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737B18C1E74E001F018E /* status_update_manager_tests.cpp */; };
+		BB8DD696192D23F500D7B2EB /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737D18C1E74E001F018E /* utils.cpp */; };
+		BB8DD697192D23FA00D7B2EB /* values_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8737F18C1E74E001F018E /* values_tests.cpp */; };
+		BB8DD6A3192D2C1300D7B2EB /* libbuild.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC34B0218C17CF500401037 /* libbuild.a */; };
+		BB8DD6A4192D2C1300D7B2EB /* liblog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB01F4C318C183C700E64633 /* liblog.a */; };
+		BB8DD6A6192D2C1300D7B2EB /* libstate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8718818C18676001F018E /* libstate.a */; };
+		BB8DD6A7192D2FF300D7B2EB /* libhashtable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F418C276EE001F018E /* libhashtable.a */; };
+		BB8DD6A8192D2FF300D7B2EB /* libprocess.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874FC18C2774D001F018E /* libprocess.dylib */; };
+		BB8DD6AD192D2FF300D7B2EB /* libev.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8DD6A9192D2FF300D7B2EB /* libev.dylib */; };
+		BB8DD6AE192D2FF300D7B2EB /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8DD6AA192D2FF300D7B2EB /* libgmock.a */; };
+		BB8DD6AF192D2FF300D7B2EB /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8DD6AB192D2FF300D7B2EB /* libgtest.a */; };
+		BB8DD6B0192D2FF300D7B2EB /* libry-http-parser-1c3624a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8DD6AC192D2FF300D7B2EB /* libry-http-parser-1c3624a.a */; };
+		BB8DD6B1192D312100D7B2EB /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
+		BB8DD6B3192D312200D7B2EB /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8DD6B2192D312200D7B2EB /* libprotobuf.a */; };
+		BB8DD6B4192D314000D7B2EB /* libsasl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CE118C176EF00E83221 /* libsasl2.dylib */; };
+		BB8DD6B6192D315700D7B2EB /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8DD6B5192D315700D7B2EB /* libleveldb.a */; };
+		BBB6FF92192D375200E1B6B5 /* libmesos_no_3rdparty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */; };
+		BBB6FF95192D3ACE00E1B6B5 /* libsasl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CE118C176EF00E83221 /* libsasl2.dylib */; };
+		BBB6FF96192D3B0700E1B6B5 /* libleveldb.1.15.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF356E018C179EF001C1BF1 /* libleveldb.1.15.dylib */; };
+		BBB6FF9F192D400700E1B6B5 /* libleveldb.1.15.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF356E018C179EF001C1BF1 /* libleveldb.1.15.dylib */; };
+		BBB6FFA0192D401300E1B6B5 /* libsasl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CE118C176EF00E83221 /* libsasl2.dylib */; };
+		BBB6FFA1192D40CD00E1B6B5 /* libzookeeper_mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F218C276EE001F018E /* libzookeeper_mt.a */; };
+		BBB6FFA2192D40DC00E1B6B5 /* libhashtable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F418C276EE001F018E /* libhashtable.a */; };
+		BBB6FFA7192D41C600E1B6B5 /* libhashtable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F418C276EE001F018E /* libhashtable.a */; };
+		BBB6FFA8192D41C600E1B6B5 /* libzookeeper_mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F218C276EE001F018E /* libzookeeper_mt.a */; };
+		BBB6FFA9192D41D100E1B6B5 /* libsasl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CE118C176EF00E83221 /* libsasl2.dylib */; };
+		BBB6FFAA192D420700E1B6B5 /* libmesos_no_3rdparty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */; };
+		BBB6FFAB192D420700E1B6B5 /* libzookeeper_mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F218C276EE001F018E /* libzookeeper_mt.a */; };
+		BBB6FFB6192D44B000E1B6B5 /* libhashtable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F418C276EE001F018E /* libhashtable.a */; };
+		BBB6FFB7192D44B000E1B6B5 /* libzookeeper_mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F218C276EE001F018E /* libzookeeper_mt.a */; };
+		BBB6FFBC192D44DE00E1B6B5 /* libhashtable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F418C276EE001F018E /* libhashtable.a */; };
+		BBB6FFBD192D44DE00E1B6B5 /* libzookeeper_mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F218C276EE001F018E /* libzookeeper_mt.a */; };
+		BBB6FFBE192D450300E1B6B5 /* libleveldb.1.15.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF356E018C179EF001C1BF1 /* libleveldb.1.15.dylib */; };
+		BBB6FFC5192D451900E1B6B5 /* libhashtable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F418C276EE001F018E /* libhashtable.a */; };
+		BBB6FFC6192D451900E1B6B5 /* libzookeeper_mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F218C276EE001F018E /* libzookeeper_mt.a */; };
+		BBB6FFCD192D453000E1B6B5 /* libhashtable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F418C276EE001F018E /* libhashtable.a */; };
+		BBB6FFCE192D453000E1B6B5 /* libzookeeper_mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874F218C276EE001F018E /* libzookeeper_mt.a */; };
+		BBB6FFCF192D454400E1B6B5 /* libleveldb.1.15.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF356E018C179EF001C1BF1 /* libleveldb.1.15.dylib */; };
+		BBB6FFD0192D455500E1B6B5 /* libsasl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CE118C176EF00E83221 /* libsasl2.dylib */; };
 		BBB8719818C1879F001F018E /* libstate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8718818C18676001F018E /* libstate.a */; };
-		BBB871B018C18896001F018E /* libmesos_no_3rdparty.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */; };
+		BBB871B018C18896001F018E /* libmesos_no_3rdparty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */; };
 		BBB871B118C1894E001F018E /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
 		BBB871B218C1894E001F018E /* libprotobuf.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */; };
 		BBB871C318C18A2D001F018E /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
 		BBB871C418C18A2D001F018E /* libprotobuf.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */; };
-		BBB871C518C18A36001F018E /* libmesos_no_3rdparty.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */; };
-		BBB871D418C18BDD001F018E /* libmesos_no_3rdparty.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */; };
+		BBB871D418C18BDD001F018E /* libmesos_no_3rdparty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */; };
 		BBB871D618C18BEF001F018E /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
 		BBB871D718C18BEF001F018E /* libprotobuf.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */; };
-		BBB871F318C18D35001F018E /* libmesos_no_3rdparty.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */; };
+		BBB871F318C18D35001F018E /* libmesos_no_3rdparty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */; };
 		BBB871F518C18D46001F018E /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
 		BBB871F618C18D46001F018E /* libprotobuf.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */; };
 		BBB873C918C1E74E001F018E /* attributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8724818C1E74D001F018E /* attributes.cpp */; };
@@ -156,15 +223,6 @@
 		BBB8747B18C1E74E001F018E /* state.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8734618C1E74D001F018E /* state.hpp */; };
 		BBB8747C18C1E74E001F018E /* storage.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8734718C1E74D001F018E /* storage.hpp */; };
 		BBB8747E18C1E74E001F018E /* zookeeper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8734918C1E74D001F018E /* zookeeper.hpp */; };
-		BBB8748518C1E74E001F018E /* cluster.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8735218C1E74E001F018E /* cluster.hpp */; };
-		BBB8748718C1E74E001F018E /* containerizer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8735418C1E74E001F018E /* containerizer.hpp */; };
-		BBB8748918C1E74E001F018E /* environment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8735618C1E74E001F018E /* environment.hpp */; };
-		BBB8748F18C1E74E001F018E /* flags.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8735C18C1E74E001F018E /* flags.hpp */; };
-		BBB8749A18C1E74E001F018E /* mesos.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8736A18C1E74E001F018E /* mesos.hpp */; };
-		BBB874A518C1E74E001F018E /* script.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8737718C1E74E001F018E /* script.hpp */; };
-		BBB874AB18C1E74E001F018E /* utils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8737E18C1E74E001F018E /* utils.hpp */; };
-		BBB874AE18C1E74E001F018E /* zookeeper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8738118C1E74E001F018E /* zookeeper.hpp */; };
-		BBB874B018C1E74E001F018E /* zookeeper_test_server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB8738318C1E74E001F018E /* zookeeper_test_server.hpp */; };
 		BBB874C518C1E74E001F018E /* authentication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB873BA18C1E74E001F018E /* authentication.cpp */; };
 		BBB874C618C1E74E001F018E /* authentication.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBB873BB18C1E74E001F018E /* authentication.hpp */; };
 		BBB874C718C1E74E001F018E /* contender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB873BC18C1E74E001F018E /* contender.cpp */; };
@@ -194,7 +252,6 @@
 		BBB874E818C27552001F018E /* log.proto in Sources */ = {isa = PBXBuildFile; fileRef = BBB872FD18C1E74D001F018E /* log.proto */; };
 		BBB874E918C27552001F018E /* messages.proto in Sources */ = {isa = PBXBuildFile; fileRef = BBB872FF18C1E74D001F018E /* messages.proto */; };
 		BBB874EA18C2759A001F018E /* state.proto in Sources */ = {isa = PBXBuildFile; fileRef = BBB8730118C1E74D001F018E /* state.proto */; };
-		BBB8750118C27AD3001F018E /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8750018C27AD3001F018E /* libcurl.dylib */; };
 		BBB8750218C27C57001F018E /* registry.proto in Sources */ = {isa = PBXBuildFile; fileRef = BBB872F718C1E74D001F018E /* registry.proto */; };
 		BBB8750318C27F16001F018E /* logging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB872E218C1E74D001F018E /* logging.cpp */; };
 		BBB8750418C27F8C001F018E /* libprocess.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874FC18C2774D001F018E /* libprocess.dylib */; };
@@ -202,28 +259,28 @@
 		BBB8750618C27FA4001F018E /* libprocess.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874FC18C2774D001F018E /* libprocess.dylib */; };
 		BBB8750718C27FAA001F018E /* libprocess.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874FC18C2774D001F018E /* libprocess.dylib */; };
 		BBB8752118C281B0001F018E /* fetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB872B918C1E74D001F018E /* fetcher.cpp */; };
-		BBB8752218C281C0001F018E /* libmesos_no_3rdparty.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */; };
+		BBB8752218C281C0001F018E /* libmesos_no_3rdparty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */; };
 		BBB8752318C281C0001F018E /* libprocess.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874FC18C2774D001F018E /* libprocess.dylib */; };
 		BBB8752418C281D9001F018E /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
 		BBB8752518C281D9001F018E /* libprotobuf.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */; };
 		BBB8752618C28228001F018E /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8750018C27AD3001F018E /* libcurl.dylib */; };
 		BBB8753418C28277001F018E /* executor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB872B818C1E74D001F018E /* executor.cpp */; };
-		BBB8753518C28284001F018E /* libmesos_no_3rdparty.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */; };
+		BBB8753518C28284001F018E /* libmesos_no_3rdparty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */; };
 		BBB8753618C28284001F018E /* libprocess.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874FC18C2774D001F018E /* libprocess.dylib */; };
 		BBB8753718C28297001F018E /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
 		BBB8753818C28297001F018E /* libprotobuf.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */; };
 		BBB8754A18C282EB001F018E /* execute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8723A18C1E74D001F018E /* execute.cpp */; };
-		BBB8754B18C282F5001F018E /* libmesos_no_3rdparty.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */; };
+		BBB8754B18C282F5001F018E /* libmesos_no_3rdparty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */; };
 		BBB8754C18C282F5001F018E /* libprocess.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874FC18C2774D001F018E /* libprocess.dylib */; };
 		BBB8754D18C28306001F018E /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
 		BBB8754E18C28306001F018E /* libprotobuf.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */; };
 		BBB8757318C2845F001F018E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB872CF18C1E74D001F018E /* main.cpp */; };
-		BBB8757618C2846C001F018E /* libmesos_no_3rdparty.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */; };
+		BBB8757618C2846C001F018E /* libmesos_no_3rdparty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */; };
 		BBB8757718C2846C001F018E /* libprocess.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874FC18C2774D001F018E /* libprocess.dylib */; };
 		BBB8757818C2847F001F018E /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
 		BBB8757918C2847F001F018E /* libprotobuf.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */; };
 		BBB8757A18C2849E001F018E /* resolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB8724618C1E74D001F018E /* resolve.cpp */; };
-		BBB8757D18C284AA001F018E /* libmesos_no_3rdparty.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */; };
+		BBB8757D18C284AA001F018E /* libmesos_no_3rdparty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */; };
 		BBB8757E18C284AA001F018E /* libprocess.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB874FC18C2774D001F018E /* libprocess.dylib */; };
 		BBB8757F18C284BF001F018E /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
 		BBB8758018C284BF001F018E /* libprotobuf.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */; };
@@ -232,19 +289,11 @@
 		BBB8758518C28617001F018E /* read.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB872DB18C1E74D001F018E /* read.cpp */; };
 		BBB8758618C28617001F018E /* replica.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB872DD18C1E74D001F018E /* replica.cpp */; };
 		BBB8758918C28A58001F018E /* liblog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB01F4C318C183C700E64633 /* liblog.a */; };
-		BBF356E118C179EF001C1BF1 /* libleveldb.1.15.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF356E018C179EF001C1BF1 /* libleveldb.1.15.dylib */; };
-		BBF356F118C17AB4001C1BF1 /* libhashtable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF356F018C17AB4001C1BF1 /* libhashtable.a */; };
-		BBF88C5F18C1496A00E83221 /* libev.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C5C18C1496A00E83221 /* libev.dylib */; };
-		BBF88C6018C1496A00E83221 /* libprocess.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C5D18C1496A00E83221 /* libprocess.dylib */; };
-		BBF88C6318C1498600E83221 /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88C6218C1498600E83221 /* libglog.0.dylib */; };
 		BBF88C6C18C14AE800E83221 /* executor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF88C6618C14AE800E83221 /* executor.hpp */; };
 		BBF88C6D18C14AE800E83221 /* resources.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF88C6918C14AE800E83221 /* resources.hpp */; };
 		BBF88C6E18C14AE800E83221 /* scheduler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF88C6A18C14AE800E83221 /* scheduler.hpp */; };
 		BBF88C6F18C14AE800E83221 /* values.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BBF88C6B18C14AE800E83221 /* values.hpp */; };
 		BBF88C7018C14AF600E83221 /* mesos.proto in Sources */ = {isa = PBXBuildFile; fileRef = BBF88C6818C14AE800E83221 /* mesos.proto */; };
-		BBF88CBC18C1520900E83221 /* libzookeeper_mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CBB18C1520900E83221 /* libzookeeper_mt.a */; };
-		BBF88CE018C176C500E83221 /* libprotobuf.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */; };
-		BBF88CE218C176EF00E83221 /* libsasl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF88CE118C176EF00E83221 /* libsasl2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -293,6 +342,153 @@
 			proxyType = 1;
 			remoteGlobalIDString = BBC34B0118C17CF500401037;
 			remoteInfo = build;
+		};
+		BB8DD64D192D21B500D7B2EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88A8618C13D7300E83221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBB8755418C283C4001F018E;
+			remoteInfo = "mesos-log";
+		};
+		BBB6FF86192D369600E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88A8618C13D7300E83221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF88A9D18C13E3100E83221;
+			remoteInfo = mesos_no_3rdparty;
+		};
+		BBB6FF88192D369600E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88CD318C16FD300E83221 /* process.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF889AD18C1341D00E83221;
+			remoteInfo = process;
+		};
+		BBB6FF8E192D372700E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88CD318C16FD300E83221 /* process.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF889AD18C1341D00E83221;
+			remoteInfo = process;
+		};
+		BBB6FF93192D3A9300E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88CD318C16FD300E83221 /* process.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF889AD18C1341D00E83221;
+			remoteInfo = process;
+		};
+		BBB6FF99192D3FC300E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF88CB018C14F8A00E83221;
+			remoteInfo = zookeeper_mt;
+		};
+		BBB6FF9B192D3FDC00E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88CD318C16FD300E83221 /* process.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF889AD18C1341D00E83221;
+			remoteInfo = process;
+		};
+		BBB6FF9D192D3FE100E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF356E518C17A31001C1BF1;
+			remoteInfo = hashtable;
+		};
+		BBB6FFA3192D41C000E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF88CB018C14F8A00E83221;
+			remoteInfo = zookeeper_mt;
+		};
+		BBB6FFA5192D41C000E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF356E518C17A31001C1BF1;
+			remoteInfo = hashtable;
+		};
+		BBB6FFB0192D44A600E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF88CB018C14F8A00E83221;
+			remoteInfo = zookeeper_mt;
+		};
+		BBB6FFB2192D44A600E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF356E518C17A31001C1BF1;
+			remoteInfo = hashtable;
+		};
+		BBB6FFB4192D44AA00E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88CD318C16FD300E83221 /* process.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF889AD18C1341D00E83221;
+			remoteInfo = process;
+		};
+		BBB6FFB8192D44D700E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF88CB018C14F8A00E83221;
+			remoteInfo = zookeeper_mt;
+		};
+		BBB6FFBA192D44D700E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF356E518C17A31001C1BF1;
+			remoteInfo = hashtable;
+		};
+		BBB6FFBF192D451200E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF88CB018C14F8A00E83221;
+			remoteInfo = zookeeper_mt;
+		};
+		BBB6FFC1192D451200E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF356E518C17A31001C1BF1;
+			remoteInfo = hashtable;
+		};
+		BBB6FFC3192D451200E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88CD318C16FD300E83221 /* process.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF889AD18C1341D00E83221;
+			remoteInfo = process;
+		};
+		BBB6FFC7192D452900E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF88CB018C14F8A00E83221;
+			remoteInfo = zookeeper_mt;
+		};
+		BBB6FFC9192D452900E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF356E518C17A31001C1BF1;
+			remoteInfo = hashtable;
+		};
+		BBB6FFCB192D452900E1B6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF88CD318C16FD300E83221 /* process.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF889AD18C1341D00E83221;
+			remoteInfo = process;
 		};
 		BBB8719618C1877F001F018E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -451,6 +647,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BB8DD65C192D231300D7B2EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		BBB871A218C18842001F018E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -554,6 +759,14 @@
 		BB8DD644192D1FA200D7B2EB /* in_memory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = in_memory.hpp; path = ../src/state/in_memory.hpp; sourceTree = SOURCE_ROOT; };
 		BB8DD645192D1FA200D7B2EB /* log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = log.cpp; path = ../src/state/log.cpp; sourceTree = SOURCE_ROOT; };
 		BB8DD646192D1FA200D7B2EB /* log.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = log.hpp; path = ../src/state/log.hpp; sourceTree = SOURCE_ROOT; };
+		BB8DD65E192D231300D7B2EB /* mesos-tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mesos-tests"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8DD6A9192D2FF300D7B2EB /* libev.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libev.dylib; path = "../../../Library/Developer/Xcode/DerivedData/mesos-ahbuasubhlqkvtddrrplpcfoauwm/Build/Products/Debug/libev.dylib"; sourceTree = "<group>"; };
+		BB8DD6AA192D2FF300D7B2EB /* libgmock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmock.a; path = "../../../Library/Developer/Xcode/DerivedData/mesos-ahbuasubhlqkvtddrrplpcfoauwm/Build/Products/Debug/libgmock.a"; sourceTree = "<group>"; };
+		BB8DD6AB192D2FF300D7B2EB /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = "../../../Library/Developer/Xcode/DerivedData/mesos-ahbuasubhlqkvtddrrplpcfoauwm/Build/Products/Debug/libgtest.a"; sourceTree = "<group>"; };
+		BB8DD6AC192D2FF300D7B2EB /* libry-http-parser-1c3624a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libry-http-parser-1c3624a.a"; path = "../../../Library/Developer/Xcode/DerivedData/mesos-ahbuasubhlqkvtddrrplpcfoauwm/Build/Products/Debug/libry-http-parser-1c3624a.a"; sourceTree = "<group>"; };
+		BB8DD6B2192D312200D7B2EB /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = /usr/local/Cellar/protobuf/2.5.0/lib/libprotobuf.a; sourceTree = "<absolute>"; };
+		BB8DD6B5192D315700D7B2EB /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libleveldb.a; path = /usr/local/Cellar/leveldb/1.15.0/lib/libleveldb.a; sourceTree = "<absolute>"; };
+		BBB6FF97192D3B0700E1B6B5 /* libzookeeper_mt.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libzookeeper_mt.2.0.0.dylib; path = /usr/local/lib/libzookeeper_mt.2.0.0.dylib; sourceTree = "<absolute>"; };
 		BBB8718818C18676001F018E /* libstate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libstate.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB871A418C18842001F018E /* mesos-master */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mesos-master"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB871B818C189CA001F018E /* mesos-slave */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mesos-slave"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -907,8 +1120,7 @@
 		BBF356E018C179EF001C1BF1 /* libleveldb.1.15.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libleveldb.1.15.dylib; path = /usr/local/Cellar/leveldb/1.15.0/lib/libleveldb.1.15.dylib; sourceTree = "<absolute>"; };
 		BBF356EC18C17A92001C1BF1 /* zookeeper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = zookeeper.xcodeproj; sourceTree = "<group>"; };
 		BBF356F018C17AB4001C1BF1 /* libhashtable.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhashtable.a; path = "../../../Library/Developer/Xcode/DerivedData/mesos-dfcxarrslkufuwaafojsbsgxsvus/Build/Products/Debug/libhashtable.a"; sourceTree = "<group>"; };
-		BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmesos_no_3rdparty.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBF88C5C18C1496A00E83221 /* libev.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libev.dylib; path = "../../../Library/Developer/Xcode/DerivedData/process-hgyrogrpotzajabempydclpntjlj/Build/Products/Debug/libev.dylib"; sourceTree = "<group>"; };
+		BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmesos_no_3rdparty.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF88C5D18C1496A00E83221 /* libprocess.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libprocess.dylib; path = "../../../Library/Developer/Xcode/DerivedData/process-hgyrogrpotzajabempydclpntjlj/Build/Products/Debug/libprocess.dylib"; sourceTree = "<group>"; };
 		BBF88C5E18C1496A00E83221 /* libry-http-parser-1c3624a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libry-http-parser-1c3624a.a"; path = "../../../Library/Developer/Xcode/DerivedData/process-hgyrogrpotzajabempydclpntjlj/Build/Products/Debug/libry-http-parser-1c3624a.a"; sourceTree = "<group>"; };
 		BBF88C6218C1498600E83221 /* libglog.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglog.0.dylib; path = /usr/local/Cellar/glog/0.3.3/lib/libglog.0.dylib; sourceTree = "<absolute>"; };
@@ -917,7 +1129,6 @@
 		BBF88C6918C14AE800E83221 /* resources.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = resources.hpp; path = ../include/mesos/resources.hpp; sourceTree = SOURCE_ROOT; };
 		BBF88C6A18C14AE800E83221 /* scheduler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = scheduler.hpp; path = ../include/mesos/scheduler.hpp; sourceTree = SOURCE_ROOT; };
 		BBF88C6B18C14AE800E83221 /* values.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = values.hpp; path = ../include/mesos/values.hpp; sourceTree = SOURCE_ROOT; };
-		BBF88CBB18C1520900E83221 /* libzookeeper_mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzookeeper_mt.a; path = "../../../Library/Developer/Xcode/DerivedData/process-hgyrogrpotzajabempydclpntjlj/Build/Products/Debug/libzookeeper_mt.a"; sourceTree = "<group>"; };
 		BBF88CD318C16FD300E83221 /* process.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = process.xcodeproj; sourceTree = "<group>"; };
 		BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libprotobuf.8.dylib; path = /usr/local/Cellar/protobuf/2.5.0/lib/libprotobuf.8.dylib; sourceTree = "<absolute>"; };
 		BBF88CE118C176EF00E83221 /* libsasl2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsasl2.dylib; path = usr/lib/libsasl2.dylib; sourceTree = SDKROOT; };
@@ -928,6 +1139,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8DD65B192D231300D7B2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB6FFAA192D420700E1B6B5 /* libmesos_no_3rdparty.a in Frameworks */,
+				BBB6FFAB192D420700E1B6B5 /* libzookeeper_mt.a in Frameworks */,
+				BB8DD6B6192D315700D7B2EB /* libleveldb.a in Frameworks */,
+				BB8DD6B4192D314000D7B2EB /* libsasl2.dylib in Frameworks */,
+				BB8DD6B3192D312200D7B2EB /* libprotobuf.a in Frameworks */,
+				BB8DD6B1192D312100D7B2EB /* libglog.0.dylib in Frameworks */,
+				BB8DD6AD192D2FF300D7B2EB /* libev.dylib in Frameworks */,
+				BB8DD6AE192D2FF300D7B2EB /* libgmock.a in Frameworks */,
+				BB8DD6AF192D2FF300D7B2EB /* libgtest.a in Frameworks */,
+				BB8DD6B0192D2FF300D7B2EB /* libry-http-parser-1c3624a.a in Frameworks */,
+				BB8DD6A7192D2FF300D7B2EB /* libhashtable.a in Frameworks */,
+				BB8DD6A8192D2FF300D7B2EB /* libprocess.dylib in Frameworks */,
+				BB8DD6A3192D2C1300D7B2EB /* libbuild.a in Frameworks */,
+				BB8DD6A4192D2C1300D7B2EB /* liblog.a in Frameworks */,
+				BB8DD6A6192D2C1300D7B2EB /* libstate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,8 +1175,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB6FFA2192D40DC00E1B6B5 /* libhashtable.a in Frameworks */,
+				BBB6FFA1192D40CD00E1B6B5 /* libzookeeper_mt.a in Frameworks */,
+				BBB6FFA0192D401300E1B6B5 /* libsasl2.dylib in Frameworks */,
+				BBB6FF9F192D400700E1B6B5 /* libleveldb.1.15.dylib in Frameworks */,
 				BBB8750418C27F8C001F018E /* libprocess.dylib in Frameworks */,
-				BBB871B018C18896001F018E /* libmesos_no_3rdparty.dylib in Frameworks */,
+				BBB871B018C18896001F018E /* libmesos_no_3rdparty.a in Frameworks */,
 				BBB871B118C1894E001F018E /* libglog.0.dylib in Frameworks */,
 				BBB871B218C1894E001F018E /* libprotobuf.8.dylib in Frameworks */,
 			);
@@ -953,8 +1190,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB6FFA9192D41D100E1B6B5 /* libsasl2.dylib in Frameworks */,
+				BBB6FFA7192D41C600E1B6B5 /* libhashtable.a in Frameworks */,
+				BBB6FFA8192D41C600E1B6B5 /* libzookeeper_mt.a in Frameworks */,
+				BBB6FF92192D375200E1B6B5 /* libmesos_no_3rdparty.a in Frameworks */,
 				BBB8750518C27F9D001F018E /* libprocess.dylib in Frameworks */,
-				BBB871C518C18A36001F018E /* libmesos_no_3rdparty.dylib in Frameworks */,
 				BBB871C318C18A2D001F018E /* libglog.0.dylib in Frameworks */,
 				BBB871C418C18A2D001F018E /* libprotobuf.8.dylib in Frameworks */,
 			);
@@ -964,8 +1204,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB6FFBC192D44DE00E1B6B5 /* libhashtable.a in Frameworks */,
+				BBB6FFBD192D44DE00E1B6B5 /* libzookeeper_mt.a in Frameworks */,
+				BBB6FF96192D3B0700E1B6B5 /* libleveldb.1.15.dylib in Frameworks */,
+				BBB6FF95192D3ACE00E1B6B5 /* libsasl2.dylib in Frameworks */,
 				BBB8750618C27FA4001F018E /* libprocess.dylib in Frameworks */,
-				BBB871D418C18BDD001F018E /* libmesos_no_3rdparty.dylib in Frameworks */,
+				BBB871D418C18BDD001F018E /* libmesos_no_3rdparty.a in Frameworks */,
 				BBB871D618C18BEF001F018E /* libglog.0.dylib in Frameworks */,
 				BBB871D718C18BEF001F018E /* libprotobuf.8.dylib in Frameworks */,
 			);
@@ -976,7 +1220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBB8750718C27FAA001F018E /* libprocess.dylib in Frameworks */,
-				BBB871F318C18D35001F018E /* libmesos_no_3rdparty.dylib in Frameworks */,
+				BBB871F318C18D35001F018E /* libmesos_no_3rdparty.a in Frameworks */,
 				BBB871F518C18D46001F018E /* libglog.0.dylib in Frameworks */,
 				BBB871F618C18D46001F018E /* libprotobuf.8.dylib in Frameworks */,
 			);
@@ -987,7 +1231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBB8752318C281C0001F018E /* libprocess.dylib in Frameworks */,
-				BBB8752218C281C0001F018E /* libmesos_no_3rdparty.dylib in Frameworks */,
+				BBB8752218C281C0001F018E /* libmesos_no_3rdparty.a in Frameworks */,
 				BBB8752418C281D9001F018E /* libglog.0.dylib in Frameworks */,
 				BBB8752518C281D9001F018E /* libprotobuf.8.dylib in Frameworks */,
 				BBB8752618C28228001F018E /* libcurl.dylib in Frameworks */,
@@ -999,7 +1243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBB8753618C28284001F018E /* libprocess.dylib in Frameworks */,
-				BBB8753518C28284001F018E /* libmesos_no_3rdparty.dylib in Frameworks */,
+				BBB8753518C28284001F018E /* libmesos_no_3rdparty.a in Frameworks */,
 				BBB8753718C28297001F018E /* libglog.0.dylib in Frameworks */,
 				BBB8753818C28297001F018E /* libprotobuf.8.dylib in Frameworks */,
 			);
@@ -1009,8 +1253,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB6FFD0192D455500E1B6B5 /* libsasl2.dylib in Frameworks */,
+				BBB6FFCF192D454400E1B6B5 /* libleveldb.1.15.dylib in Frameworks */,
+				BBB6FFCD192D453000E1B6B5 /* libhashtable.a in Frameworks */,
+				BBB6FFCE192D453000E1B6B5 /* libzookeeper_mt.a in Frameworks */,
 				BBB8754C18C282F5001F018E /* libprocess.dylib in Frameworks */,
-				BBB8754B18C282F5001F018E /* libmesos_no_3rdparty.dylib in Frameworks */,
+				BBB8754B18C282F5001F018E /* libmesos_no_3rdparty.a in Frameworks */,
 				BBB8754D18C28306001F018E /* libglog.0.dylib in Frameworks */,
 				BBB8754E18C28306001F018E /* libprotobuf.8.dylib in Frameworks */,
 			);
@@ -1020,8 +1268,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB6FFBE192D450300E1B6B5 /* libleveldb.1.15.dylib in Frameworks */,
+				BBB6FFB6192D44B000E1B6B5 /* libhashtable.a in Frameworks */,
+				BBB6FFB7192D44B000E1B6B5 /* libzookeeper_mt.a in Frameworks */,
 				BBB8757718C2846C001F018E /* libprocess.dylib in Frameworks */,
-				BBB8757618C2846C001F018E /* libmesos_no_3rdparty.dylib in Frameworks */,
+				BBB8757618C2846C001F018E /* libmesos_no_3rdparty.a in Frameworks */,
 				BBB8757818C2847F001F018E /* libglog.0.dylib in Frameworks */,
 				BBB8757918C2847F001F018E /* libprotobuf.8.dylib in Frameworks */,
 			);
@@ -1031,9 +1282,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB6FFC5192D451900E1B6B5 /* libhashtable.a in Frameworks */,
+				BBB6FFC6192D451900E1B6B5 /* libzookeeper_mt.a in Frameworks */,
 				BBB8757F18C284BF001F018E /* libglog.0.dylib in Frameworks */,
 				BBB8758018C284BF001F018E /* libprotobuf.8.dylib in Frameworks */,
-				BBB8757D18C284AA001F018E /* libmesos_no_3rdparty.dylib in Frameworks */,
+				BBB8757D18C284AA001F018E /* libmesos_no_3rdparty.a in Frameworks */,
 				BBB8757E18C284AA001F018E /* libprocess.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1049,18 +1302,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF356F118C17AB4001C1BF1 /* libhashtable.a in Frameworks */,
-				BBF88CBC18C1520900E83221 /* libzookeeper_mt.a in Frameworks */,
 				BBB8758918C28A58001F018E /* liblog.a in Frameworks */,
 				BB01F4B318C1834E00E64633 /* libbuild.a in Frameworks */,
 				BBB8719818C1879F001F018E /* libstate.a in Frameworks */,
-				BBB8750118C27AD3001F018E /* libcurl.dylib in Frameworks */,
-				BBF88C5F18C1496A00E83221 /* libev.dylib in Frameworks */,
-				BBF88C6318C1498600E83221 /* libglog.0.dylib in Frameworks */,
-				BBF356E118C179EF001C1BF1 /* libleveldb.1.15.dylib in Frameworks */,
-				BBF88C6018C1496A00E83221 /* libprocess.dylib in Frameworks */,
-				BBF88CE018C176C500E83221 /* libprotobuf.8.dylib in Frameworks */,
-				BBF88CE218C176EF00E83221 /* libsasl2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1961,7 +2205,7 @@
 		BBF88A8F18C13D7300E83221 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */,
+				BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */,
 				BBC34B0218C17CF500401037 /* libbuild.a */,
 				BB01F4C318C183C700E64633 /* liblog.a */,
 				BBB8718818C18676001F018E /* libstate.a */,
@@ -1974,6 +2218,7 @@
 				BBB8754118C282D3001F018E /* mesos-execute */,
 				BBB8755518C283C4001F018E /* mesos-log */,
 				BBB8756A18C28431001F018E /* mesos-resolve */,
+				BB8DD65E192D231300D7B2EB /* mesos-tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2011,14 +2256,19 @@
 		BBF88CD518C16FF200E83221 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				BBB6FF97192D3B0700E1B6B5 /* libzookeeper_mt.2.0.0.dylib */,
+				BB8DD6B5192D315700D7B2EB /* libleveldb.a */,
+				BB8DD6B2192D312200D7B2EB /* libprotobuf.a */,
+				BB8DD6A9192D2FF300D7B2EB /* libev.dylib */,
+				BB8DD6AA192D2FF300D7B2EB /* libgmock.a */,
+				BB8DD6AB192D2FF300D7B2EB /* libgtest.a */,
+				BB8DD6AC192D2FF300D7B2EB /* libry-http-parser-1c3624a.a */,
 				BBB8750018C27AD3001F018E /* libcurl.dylib */,
 				BBF356F018C17AB4001C1BF1 /* libhashtable.a */,
 				BBF356E018C179EF001C1BF1 /* libleveldb.1.15.dylib */,
 				BBF88CE118C176EF00E83221 /* libsasl2.dylib */,
 				BBF88CDF18C176C500E83221 /* libprotobuf.8.dylib */,
-				BBF88CBB18C1520900E83221 /* libzookeeper_mt.a */,
 				BBF88C6218C1498600E83221 /* libglog.0.dylib */,
-				BBF88C5C18C1496A00E83221 /* libev.dylib */,
 				BBF88C5D18C1496A00E83221 /* libprocess.dylib */,
 				BBF88C5E18C1496A00E83221 /* libry-http-parser-1c3624a.a */,
 			);
@@ -2072,13 +2322,11 @@
 				BBB8741618C1E74E001F018E /* catchup.hpp in Headers */,
 				BBB874CC18C1E74E001F018E /* group.hpp in Headers */,
 				BBB8742218C1E74E001F018E /* recover.hpp in Headers */,
-				BBB8748718C1E74E001F018E /* containerizer.hpp in Headers */,
 				BBB8740218C1E74E001F018E /* io.hpp in Headers */,
 				BBB8745518C1E74E001F018E /* authenticator.hpp in Headers */,
 				BBB873E918C1E74E001F018E /* hdfs.hpp in Headers */,
 				BBB8742F18C1E74E001F018E /* flags.hpp in Headers */,
 				BBB8747318C1E74E001F018E /* slave.hpp in Headers */,
-				BBB8749A18C1E74E001F018E /* mesos.hpp in Headers */,
 				BBB8744718C1E74E001F018E /* log.hpp in Headers */,
 				BBB8743418C1E74E001F018E /* constants.hpp in Headers */,
 				BBB873D318C1E74E001F018E /* lock.hpp in Headers */,
@@ -2101,7 +2349,6 @@
 				BBB8741E18C1E74E001F018E /* log.hpp in Headers */,
 				BBB8741018C1E74E001F018E /* fs.hpp in Headers */,
 				BBB8745118C1E74E001F018E /* proxy_executor.hpp in Headers */,
-				BBB874B018C1E74E001F018E /* zookeeper_test_server.hpp in Headers */,
 				BBB8742918C1E74E001F018E /* initialize.hpp in Headers */,
 				BBB8741318C1E74E001F018E /* local.hpp in Headers */,
 				BBB8744B18C1E74E001F018E /* mesos_executor_driver_impl.hpp in Headers */,
@@ -2110,14 +2357,12 @@
 				BBB8742718C1E74E001F018E /* benchmark.hpp in Headers */,
 				BBB8744618C1E74E001F018E /* sorter.hpp in Headers */,
 				BB8DD635192D040800D7B2EB /* mesos_containerizer.hpp in Headers */,
-				BBB874AE18C1E74E001F018E /* zookeeper.hpp in Headers */,
 				BBB8747118C1E74E001F018E /* paths.hpp in Headers */,
 				BBB8743A18C1E74E001F018E /* drf_sorter.hpp in Headers */,
 				BBB8741A18C1E74E001F018E /* coordinator.hpp in Headers */,
 				BBB8744018C1E74E001F018E /* master.hpp in Headers */,
 				BBB8744918C1E74E001F018E /* state.hpp in Headers */,
 				BBB8746518C1E74E001F018E /* posix.hpp in Headers */,
-				BBB8748F18C1E74E001F018E /* flags.hpp in Headers */,
 				BBB8745318C1E74E001F018E /* proxy_scheduler.hpp in Headers */,
 				BBB874CE18C1E74E001F018E /* watcher.hpp in Headers */,
 				BBB8744518C1E74E001F018E /* repairer.hpp in Headers */,
@@ -2129,19 +2374,15 @@
 				BBB8746A18C1E74E001F018E /* flags.hpp in Headers */,
 				BBB8745A18C1E74E001F018E /* constants.hpp in Headers */,
 				BBB8743B18C1E74E001F018E /* flags.hpp in Headers */,
-				BBB874A518C1E74E001F018E /* script.hpp in Headers */,
 				BBB8743C18C1E74E001F018E /* hierarchical_allocator_process.hpp in Headers */,
 				BBB8740E18C1E74E001F018E /* cgroups.hpp in Headers */,
 				BBB8744218C1E74E001F018E /* registrar.hpp in Headers */,
 				BBB873E818C1E74E001F018E /* files.hpp in Headers */,
-				BBB874AB18C1E74E001F018E /* utils.hpp in Headers */,
 				BBB8747018C1E74E001F018E /* monitor.hpp in Headers */,
 				BBB873D718C1E74E001F018E /* type_utils.hpp in Headers */,
 				BBB874D018C1E74E001F018E /* zookeeper.hpp in Headers */,
-				BBB8748918C1E74E001F018E /* environment.hpp in Headers */,
 				BBB873EB18C1E74E001F018E /* construct.hpp in Headers */,
 				BBB8741118C1E74E001F018E /* flags.hpp in Headers */,
-				BBB8748518C1E74E001F018E /* cluster.hpp in Headers */,
 				BBB873D618C1E74E001F018E /* thread.hpp in Headers */,
 				BBB873D118C1E74E001F018E /* http.hpp in Headers */,
 				BBF88C6E18C14AE800E83221 /* scheduler.hpp in Headers */,
@@ -2178,6 +2419,25 @@
 			productReference = BB01F4C318C183C700E64633 /* liblog.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		BB8DD65D192D231300D7B2EB /* mesos-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8DD669192D231400D7B2EB /* Build configuration list for PBXNativeTarget "mesos-tests" */;
+			buildPhases = (
+				BB8DD65A192D231300D7B2EB /* Sources */,
+				BB8DD65B192D231300D7B2EB /* Frameworks */,
+				BB8DD65C192D231300D7B2EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBB6FF87192D369600E1B6B5 /* PBXTargetDependency */,
+				BBB6FF89192D369600E1B6B5 /* PBXTargetDependency */,
+			);
+			name = "mesos-tests";
+			productName = "mesos-tests";
+			productReference = BB8DD65E192D231300D7B2EB /* mesos-tests */;
+			productType = "com.apple.product-type.tool";
+		};
 		BBB8718718C18676001F018E /* state */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBB8718D18C18676001F018E /* Build configuration list for PBXNativeTarget "state" */;
@@ -2208,6 +2468,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				BBB6FF9E192D3FE100E1B6B5 /* PBXTargetDependency */,
+				BBB6FF9C192D3FDC00E1B6B5 /* PBXTargetDependency */,
+				BBB6FF9A192D3FC300E1B6B5 /* PBXTargetDependency */,
 				BBB871AF18C18885001F018E /* PBXTargetDependency */,
 			);
 			name = "mesos-master";
@@ -2226,6 +2489,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				BBB6FFA4192D41C000E1B6B5 /* PBXTargetDependency */,
+				BBB6FFA6192D41C000E1B6B5 /* PBXTargetDependency */,
+				BBB6FF8F192D372700E1B6B5 /* PBXTargetDependency */,
 				BBB8720518C1A62C001F018E /* PBXTargetDependency */,
 			);
 			name = "mesos-slave";
@@ -2244,6 +2510,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				BBB6FFB9192D44D700E1B6B5 /* PBXTargetDependency */,
+				BBB6FFBB192D44D700E1B6B5 /* PBXTargetDependency */,
+				BBB6FF94192D3A9300E1B6B5 /* PBXTargetDependency */,
 				BBB8720718C1A638001F018E /* PBXTargetDependency */,
 			);
 			name = "mesos-local";
@@ -2316,6 +2585,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				BBB6FFC8192D452900E1B6B5 /* PBXTargetDependency */,
+				BBB6FFCA192D452900E1B6B5 /* PBXTargetDependency */,
+				BBB6FFCC192D452900E1B6B5 /* PBXTargetDependency */,
 				BBB8755018C28312001F018E /* PBXTargetDependency */,
 			);
 			name = "mesos-execute";
@@ -2334,6 +2606,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				BBB6FFB5192D44AA00E1B6B5 /* PBXTargetDependency */,
+				BBB6FFB1192D44A600E1B6B5 /* PBXTargetDependency */,
+				BBB6FFB3192D44A600E1B6B5 /* PBXTargetDependency */,
 				BBB8757518C28465001F018E /* PBXTargetDependency */,
 			);
 			name = "mesos-log";
@@ -2352,6 +2627,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				BBB6FFC0192D451200E1B6B5 /* PBXTargetDependency */,
+				BBB6FFC2192D451200E1B6B5 /* PBXTargetDependency */,
+				BBB6FFC4192D451200E1B6B5 /* PBXTargetDependency */,
 				BBB8757C18C284A5001F018E /* PBXTargetDependency */,
 			);
 			name = "mesos-resolve";
@@ -2395,8 +2673,8 @@
 			);
 			name = mesos_no_3rdparty;
 			productName = mesos_no_3rdparty;
-			productReference = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
+			productReference = BBF88A9E18C13E3100E83221 /* libmesos_no_3rdparty.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -2443,6 +2721,7 @@
 				BBB8756918C28431001F018E /* mesos-resolve */,
 				BBB871B718C189CA001F018E /* mesos-slave */,
 				BBB8750818C28046001F018E /* mesos-all */,
+				BB8DD65D192D231300D7B2EB /* mesos-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -2550,6 +2829,44 @@
 				BBB874DD18C1EB27001F018E /* log.cpp in Sources */,
 				BBB874DE18C1EB27001F018E /* recover.cpp in Sources */,
 				BBB874DF18C1EB27001F018E /* replica.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8DD65A192D231300D7B2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8DD67F192D23B000D7B2EB /* gc_tests.cpp in Sources */,
+				BB8DD677192D238D00D7B2EB /* containerizer.cpp in Sources */,
+				BB8DD693192D23ED00D7B2EB /* sorter_tests.cpp in Sources */,
+				BB8DD686192D23C200D7B2EB /* master_tests.cpp in Sources */,
+				BB8DD68C192D23D400D7B2EB /* registrar_tests.cpp in Sources */,
+				BB8DD688192D23C900D7B2EB /* monitor_tests.cpp in Sources */,
+				BB8DD68B192D23D200D7B2EB /* protobuf_io_tests.cpp in Sources */,
+				BB8DD67D192D23A600D7B2EB /* flags.cpp in Sources */,
+				BB8DD67C192D23A300D7B2EB /* files_tests.cpp in Sources */,
+				BB8DD68D192D23D700D7B2EB /* repair_tests.cpp in Sources */,
+				BB8DD68F192D23DC00D7B2EB /* resources_tests.cpp in Sources */,
+				BB8DD691192D23E100D7B2EB /* script.cpp in Sources */,
+				BB8DD679192D239B00D7B2EB /* examples_tests.cpp in Sources */,
+				BB8DD682192D23B800D7B2EB /* log_tests.cpp in Sources */,
+				BB8DD696192D23F500D7B2EB /* utils.cpp in Sources */,
+				BB8DD695192D23F200D7B2EB /* status_update_manager_tests.cpp in Sources */,
+				BB8DD697192D23FA00D7B2EB /* values_tests.cpp in Sources */,
+				BB8DD683192D23BA00D7B2EB /* logging_tests.cpp in Sources */,
+				BB8DD687192D23C400D7B2EB /* mesos.cpp in Sources */,
+				BB8DD692192D23E500D7B2EB /* slave_recovery_tests.cpp in Sources */,
+				BB8DD671192D237400D7B2EB /* allocator_tests.cpp in Sources */,
+				BB8DD67A192D239E00D7B2EB /* exception_tests.cpp in Sources */,
+				BB8DD673192D237A00D7B2EB /* attributes_tests.cpp in Sources */,
+				BB8DD685192D23BF00D7B2EB /* master_contender_detector_tests.cpp in Sources */,
+				BB8DD67B192D23A000D7B2EB /* fault_tolerance_tests.cpp in Sources */,
+				BB8DD678192D239300D7B2EB /* environment.cpp in Sources */,
+				BB8DD689192D23CD00D7B2EB /* paths_tests.cpp in Sources */,
+				BB8DD674192D237C00D7B2EB /* authentication_tests.cpp in Sources */,
+				BB8DD684192D23BC00D7B2EB /* main.cpp in Sources */,
+				BB8DD68E192D23D900D7B2EB /* resource_offers_tests.cpp in Sources */,
+				BB8DD694192D23EF00D7B2EB /* state_tests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2700,6 +3017,111 @@
 			target = BBC34B0118C17CF500401037 /* build */;
 			targetProxy = BB01F4B018C17D3F00E64633 /* PBXContainerItemProxy */;
 		};
+		BB8DD64E192D21B500D7B2EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBB8755418C283C4001F018E /* mesos-log */;
+			targetProxy = BB8DD64D192D21B500D7B2EB /* PBXContainerItemProxy */;
+		};
+		BBB6FF87192D369600E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBF88A9D18C13E3100E83221 /* mesos_no_3rdparty */;
+			targetProxy = BBB6FF86192D369600E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FF89192D369600E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = process;
+			targetProxy = BBB6FF88192D369600E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FF8F192D372700E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = process;
+			targetProxy = BBB6FF8E192D372700E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FF94192D3A9300E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = process;
+			targetProxy = BBB6FF93192D3A9300E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FF9A192D3FC300E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zookeeper_mt;
+			targetProxy = BBB6FF99192D3FC300E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FF9C192D3FDC00E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = process;
+			targetProxy = BBB6FF9B192D3FDC00E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FF9E192D3FE100E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = hashtable;
+			targetProxy = BBB6FF9D192D3FE100E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFA4192D41C000E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zookeeper_mt;
+			targetProxy = BBB6FFA3192D41C000E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFA6192D41C000E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = hashtable;
+			targetProxy = BBB6FFA5192D41C000E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFB1192D44A600E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zookeeper_mt;
+			targetProxy = BBB6FFB0192D44A600E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFB3192D44A600E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = hashtable;
+			targetProxy = BBB6FFB2192D44A600E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFB5192D44AA00E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = process;
+			targetProxy = BBB6FFB4192D44AA00E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFB9192D44D700E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zookeeper_mt;
+			targetProxy = BBB6FFB8192D44D700E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFBB192D44D700E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = hashtable;
+			targetProxy = BBB6FFBA192D44D700E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFC0192D451200E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zookeeper_mt;
+			targetProxy = BBB6FFBF192D451200E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFC2192D451200E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = hashtable;
+			targetProxy = BBB6FFC1192D451200E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFC4192D451200E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = process;
+			targetProxy = BBB6FFC3192D451200E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFC8192D452900E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zookeeper_mt;
+			targetProxy = BBB6FFC7192D452900E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFCA192D452900E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = hashtable;
+			targetProxy = BBB6FFC9192D452900E1B6B5 /* PBXContainerItemProxy */;
+		};
+		BBB6FFCC192D452900E1B6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = process;
+			targetProxy = BBB6FFCB192D452900E1B6B5 /* PBXContainerItemProxy */;
+		};
 		BBB8719718C1877F001F018E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BBB8718718C18676001F018E /* state */;
@@ -2818,6 +3240,79 @@
 			};
 			name = Release;
 		};
+		BB8DD664192D231400D7B2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"GTEST_USE_OWN_TR1_TUPLE=1",
+					"BUILD_DIR=\\\"$(PROJECT_DIR)/../build\\\"",
+					"SOURCE_DIR=\\\"$(PROJECT_DIR)/../src\\\"",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../3rdparty/libprocess/include,
+					../3rdparty/libprocess/3rdparty/stout/include,
+					../include,
+					"../build/3rdparty/zookeeper-3.4.5/src/c/include",
+					"../build/3rdparty/zookeeper-3.4.5/src/c/generated",
+					../build/include,
+					../build/include/mesos,
+					../build/src,
+					"../build/3rdparty/libprocess/3rdparty/picojson-4f93734",
+					/usr/local/include,
+					"../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include",
+					"../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/gtest/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/mesos-ahbuasubhlqkvtddrrplpcfoauwm/Build/Products/Debug",
+					/usr/local/Cellar/glog/0.3.3/lib,
+					/usr/local/Cellar/protobuf/2.5.0/lib,
+					/usr/local/Cellar/leveldb/1.15.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB8DD665192D231400D7B2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../3rdparty/libprocess/include,
+					../3rdparty/libprocess/3rdparty/stout/include,
+					../include,
+					"../build/3rdparty/zookeeper-3.4.5/src/c/include",
+					"../build/3rdparty/zookeeper-3.4.5/src/c/generated",
+					../build/include,
+					../build/include/mesos,
+					../build/src,
+					"../build/3rdparty/libprocess/3rdparty/picojson-4f93734",
+					/usr/local/include,
+					"../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/include",
+					"../build/3rdparty/libprocess/3rdparty/gmock-1.6.0/gtest/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/mesos-ahbuasubhlqkvtddrrplpcfoauwm/Build/Products/Debug",
+					/usr/local/Cellar/glog/0.3.3/lib,
+					/usr/local/Cellar/protobuf/2.5.0/lib,
+					/usr/local/Cellar/leveldb/1.15.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BBB8718918C18676001F018E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2841,10 +3336,13 @@
 		BBB871AB18C18842001F018E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
 					/usr/local/Cellar/protobuf/2.5.0/lib,
+					/usr/local/Cellar/leveldb/1.15.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2853,10 +3351,13 @@
 		BBB871AC18C18842001F018E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
 					/usr/local/Cellar/protobuf/2.5.0/lib,
+					/usr/local/Cellar/leveldb/1.15.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2865,6 +3366,8 @@
 		BBB871BF18C189CA001F018E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
@@ -2877,6 +3380,8 @@
 		BBB871C018C189CA001F018E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
@@ -2889,10 +3394,14 @@
 		BBB871D118C18B84001F018E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
 					/usr/local/Cellar/protobuf/2.5.0/lib,
+					/usr/local/Cellar/leveldb/1.15.0/lib,
+					/usr/local/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2901,10 +3410,14 @@
 		BBB871D218C18B84001F018E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
 					/usr/local/Cellar/protobuf/2.5.0/lib,
+					/usr/local/Cellar/leveldb/1.15.0/lib,
+					/usr/local/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2913,6 +3426,8 @@
 		BBB871F018C18C96001F018E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
@@ -2925,6 +3440,8 @@
 		BBB871F118C18C96001F018E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
@@ -2951,10 +3468,12 @@
 		BBB8751F18C2818C001F018E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
@@ -2967,6 +3486,8 @@
 		BBB8752018C2818C001F018E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
@@ -2979,10 +3500,12 @@
 		BBB8753218C2825C001F018E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
@@ -2995,6 +3518,8 @@
 		BBB8753318C2825C001F018E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
@@ -3007,14 +3532,17 @@
 		BBB8754818C282D3001F018E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
 					/usr/local/Cellar/protobuf/2.5.0/lib,
+					/usr/local/Cellar/leveldb/1.15.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3023,10 +3551,13 @@
 		BBB8754918C282D3001F018E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
 					/usr/local/Cellar/protobuf/2.5.0/lib,
+					/usr/local/Cellar/leveldb/1.15.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3035,14 +3566,17 @@
 		BBB8755C18C283C4001F018E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
 					/usr/local/Cellar/protobuf/2.5.0/lib,
+					/usr/local/Cellar/leveldb/1.15.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3051,10 +3585,13 @@
 		BBB8755D18C283C4001F018E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
 					/usr/local/Cellar/protobuf/2.5.0/lib,
+					/usr/local/Cellar/leveldb/1.15.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3063,10 +3600,12 @@
 		BBB8757118C28431001F018E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
@@ -3079,6 +3618,8 @@
 		BBB8757218C28431001F018E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glog/0.3.3/lib,
@@ -3176,7 +3717,6 @@
 					"MESOS_HAS_PYTHON=1",
 					"HAVE_LIBCURL=1",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -3309,6 +3849,15 @@
 			buildConfigurations = (
 				BB01F4C518C183C700E64633 /* Debug */,
 				BB01F4C618C183C700E64633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8DD669192D231400D7B2EB /* Build configuration list for PBXNativeTarget "mesos-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8DD664192D231400D7B2EB /* Debug */,
+				BB8DD665192D231400D7B2EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

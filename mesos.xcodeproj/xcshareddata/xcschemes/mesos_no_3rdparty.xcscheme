@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BBF88A9D18C13E3100E83221"
-               BuildableName = "libmesos_no_3rdparty.dylib"
+               BuildableName = "libmesos_no_3rdparty.a"
                BlueprintName = "mesos_no_3rdparty"
                ReferencedContainer = "container:mesos.xcodeproj">
             </BuildableReference>
